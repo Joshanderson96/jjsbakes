@@ -1,0 +1,89 @@
+.showcase {
+    max-width: $max-width;
+    margin: auto;
+    padding-bottom: 3rem;
+}
+
+.showcase-title {
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.showcase-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+
+
+
+}
+
+.showcase-card {
+    align-content: center;
+    text-align: center;
+    margin: 1rem;
+    width: 30%;
+
+
+
+
+
+    &:hover {
+        text-decoration: underline $main-colour 2px;
+    }
+
+
+    &-image {
+        width: 18rem;
+        height: 18rem;
+        margin: 2rem auto;
+        // border: 3px solid $main-colour;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+
+        &--picture {
+            display: inline;
+            margin: 0 auto;
+            margin-left: -15%; //centers the image
+            height: 100%;
+            width: auto;
+
+
+        }
+
+        &:hover &--picture {
+            filter: blur(2px);
+            transition: 0.2s ease-out;
+
+        }
+
+        &--view {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-family: $secondary-font;
+            font-weight: bolder;
+            font-size: 1.5rem;
+            text-align: center;
+            opacity: 0;
+            cursor: pointer;
+
+            &:hover {
+                background: rgba($main-colour, 0.5);
+                transition: 0.2s;
+
+            }
+        }
+
+        &:hover &--view {
+            opacity: 1;
+            transition: 0.2s ease-in-out;
+
+            // transform: translateY(-50%)
+        }
+    }
+}

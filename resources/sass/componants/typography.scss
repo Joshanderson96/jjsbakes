@@ -1,0 +1,23 @@
+.main-heading {
+    color: $main-colour;
+    font-size: 4rem;
+    font-family: $main-font;
+    text-align: center;
+
+}
+
+.main-text {
+    color: $secondary-colour;
+    font-family: $secondary-font;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.showcase-card--title {
+    color: $main-colour;
+    font-family: $secondary-font;
+    font-size: 1.3rem;
+    font-weight: bold;
+    max-width: 100%;
+
+}

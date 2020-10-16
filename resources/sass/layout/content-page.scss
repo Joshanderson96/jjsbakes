@@ -1,0 +1,109 @@
+.content-container {
+    max-width: $max-width;
+    margin: auto;
+    margin-bottom: 7rem;
+}
+
+.content-container__cards {
+
+    // border: black 1px solid;
+
+    display: grid;
+    gap: 2rem 3.75rem;
+    grid-template-columns: repeat(3, 1fr);
+
+
+}
+
+.content-title {
+    margin-bottom: 3rem;
+}
+
+.content-cards {
+    max-width: 17.5rem;
+    min-width: 17.5rem;
+    // border: 1px solid $main-colour;
+    border-radius: 3px;
+    height: 393px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+
+
+    @include sublet-shadow
+}
+
+.content-cards-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 97%;
+    font-family: $secondary-font;
+    font-size: 1.2rem;
+}
+
+.content-cards__image {
+    width: 100%;
+    height: 190px;
+    text-align: center;
+    margin-top: 0.5rem;
+
+
+}
+
+.cards__image {
+
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 3px;
+    // @include sublet-shadow
+}
+
+.content-cards__title {
+    width: 100%;
+    color: $main-colour;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $very-light-grey;
+    font-weight: bolder;
+}
+
+
+.content-cards__prep {
+    width: 100%;
+    color: $secondary-colour;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $very-light-grey;
+}
+
+.content-cards__creator {
+    width: 100%;
+    color: $secondary-colour;
+    font-weight: bold;
+}
+
+.cards-highlight {
+    color: $main-colour;
+}
+
+.content-cards__view {
+    background-color: $main-colour;
+    color: white;
+    height: 7rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    font-family: $secondary-font;
+    font-weight: bold;
+
+    &:hover {
+        background-color: lighten($main-colour, $amount: 3);
+        color: darken(white, $amount: 3);
+    }
+}

@@ -1,0 +1,20 @@
+// Colours
+
+$main-colour: #FF7ED8;
+$secondary-colour: #9D9D9D;
+$very-light-grey: #f0f0f0;
+
+$main-font: 'Sacramento',
+cursive;
+$secondary-font: 'M PLUS Rounded 1c',
+sans-serif;
+;
+
+
+$max-width: 960px;
+
+@mixin sublet-shadow {
+    -webkit-box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+    -moz-box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
