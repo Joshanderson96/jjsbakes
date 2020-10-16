@@ -1,3 +1,7 @@
+.container {
+  margin-top: 10rem;
+}
+
 html,
 body {
   max-width: 100%;
@@ -473,14 +477,12 @@ textarea {
 }
 
 .navbar-logo {
-  display: block;
   background-color: white;
   border-radius: 50%;
-  padding: 0.5rem;
 }
 
 .navbar-logo--image {
-  max-width: 12rem;
+  max-width: 5rem;
 }
 
 .main-heading {
@@ -506,41 +508,37 @@ textarea {
 }
 
 .navbar {
-  max-width: 960px;
-  margin: auto;
-  height: auto;
-  background-color: white;
+  width: 100%;
+  display: flex;
+  background: #ff58cd;
+  background: linear-gradient(299deg, #ff58cd 0%, #ff7ed8 75%);
   margin-bottom: 3rem;
+  position: fixed;
+  z-index: 999;
 }
 
 .navbar-container {
-  margin: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  padding: 0.5rem 2rem;
 }
 
-.navbar-menu-1 {
-  text-decoration: none;
-  flex: 2;
-}
-
-.navbar-menu-2 {
-  text-decoration: none;
-  flex: 2;
+.navbar-logo--image {
+  display: flex;
 }
 
 .navbar-options {
   display: flex;
-  color: #FF7ED8;
-  font-size: 2.3rem;
+  color: white;
+  font-size: 2rem;
   font-weight: bold;
-  justify-content: space-around;
+  margin-left: 2rem;
 }
 
 .navbar-options-text {
   font-family: "Sacramento", cursive;
-  fill: #FF7ED8;
+  margin-right: 2rem;
 }
 
 .navbar-options__link:link {
@@ -559,10 +557,17 @@ textarea {
 }
 
 .navbar-options__link:hover {
+  color: inherit;
   cursor: pointer;
   -webkit-text-decoration: underline 2px;
           text-decoration: underline 2px;
   transition: 0.2s;
+}
+
+.header-container {
+  width: 100%;
+  background-color: white;
+  padding: 0.5rem 2rem;
 }
 
 .content {

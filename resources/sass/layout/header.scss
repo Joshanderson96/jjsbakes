@@ -1,49 +1,48 @@
 .navbar {
 
-    max-width: $max-width;
-    margin: auto;
-    height: auto;
+    width: $full-width;
+
+    display: flex;
     // background: radial-gradient(circle, rgba(255, 174, 231, 1) 2%, rgba(255, 126, 216, 1) 20%);
-    background-color: white;
+    background: rgb(255, 88, 205);
+    background: linear-gradient(299deg, rgba(255, 88, 205, 1) 0%, rgba(255, 126, 216, 1) 75%);
     margin-bottom: 3rem;
+    position: fixed;
+    z-index: 999;
 
     &-container {
 
-        margin: auto;
+
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
         // margin-bottom: 3rem;
-
-    }
-
-    &-menu-1 {
-
-        text-decoration: none;
-        // justify-content: space-around;
-        flex: 2;
+        padding: 0.5rem 2rem;
 
 
     }
 
-    &-menu-2 {
-        text-decoration: none;
-        // justify-content: space-around;
-        flex: 2;
-        // margin-left: -64px;
+
+
+
+
+
+    &-logo--image {
+        display: flex;
+
 
     }
-
 
 
 
     &-options {
         display: flex;
-        color: $main-colour;
-        font-size: 2.3rem;
+        color: white;
+        font-size: 2rem;
         font-weight: bold;
+        margin-left: 2rem;
         // margin: 5.5rem;
-        justify-content: space-around;
+
 
 
 
@@ -51,7 +50,8 @@
         &-text {
 
             font-family: $main-font;
-            fill: $main-colour;
+
+            margin-right: 2rem;
 
 
 
@@ -75,6 +75,7 @@
             }
 
             &:hover {
+                color: inherit;
                 cursor: pointer;
                 text-decoration: underline 2px;
                 transition: 0.2s;
@@ -84,4 +85,10 @@
     }
 
 
+}
+
+.header-container {
+    width: $full-width;
+    background-color: white;
+    padding: 0.5rem 2rem;
 }
