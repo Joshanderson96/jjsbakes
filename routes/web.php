@@ -21,4 +21,8 @@ Route::get('/content', function () {
     return view('pages.content');
 });
 
+Route::get('/create', function () {
+    return view('pages.create');
+});
+
 Route::resource('/blogs', 'BlogsController');
