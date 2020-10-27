@@ -477,8 +477,9 @@ textarea {
 }
 
 .navbar-logo {
-  background-color: white;
+  background-color: #FF7ED8;
   border-radius: 50%;
+  border-color: #FF7ED8;
 }
 
 .navbar-logo--image {
