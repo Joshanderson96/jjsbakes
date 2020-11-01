@@ -1,0 +1,34 @@
+.create-container {
+    max-width: $max-width;
+    margin: auto;
+}
+
+.create-form {
+    margin-top: 7rem;
+
+    &__title {
+        font-family: $secondary-font;
+        font-size: 1.5rem;
+        color: $main-colour;
+        margin-bottom: 0.5rem;
+        text-transform: lowercase;
+    }
+
+    &__input {
+        -webkit-appearance: none;
+        border: none;
+        border-bottom: 0.2rem solid $secondary-colour;
+        border-radius: 0.3rem 0.3rem 0.1rem 0.1rem;
+        width: 100%;
+        background: rgba($main-colour, 0.18);
+        height: 2.5rem;
+        padding-left: 0.5rem;
+        color: grey;
+        margin-top: 0.5rem;
+
+
+        &:focus {
+            border-bottom: $main-colour 0.2rem solid;
+        }
+    }
+}

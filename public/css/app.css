@@ -749,3 +749,37 @@ textarea {
   color: #f7f7f7;
 }
 
+.create-container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.create-form {
+  margin-top: 7rem;
+}
+
+.create-form__title {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 1.5rem;
+  color: #FF7ED8;
+  margin-bottom: 0.5rem;
+  text-transform: lowercase;
+}
+
+.create-form__input {
+  -webkit-appearance: none;
+  border: none;
+  border-bottom: 0.2rem solid #9D9D9D;
+  border-radius: 0.3rem 0.3rem 0.1rem 0.1rem;
+  width: 100%;
+  background: rgba(255, 126, 216, 0.18);
+  height: 2.5rem;
+  padding-left: 0.5rem;
+  color: grey;
+  margin-top: 0.5rem;
+}
+
+.create-form__input:focus {
+  border-bottom: #FF7ED8 0.2rem solid;
+}
+
