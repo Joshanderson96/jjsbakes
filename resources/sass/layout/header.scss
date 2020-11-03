@@ -9,6 +9,7 @@
     margin-bottom: 3rem;
     position: fixed;
     z-index: 999;
+    top: 0;
 
     &-container {
 
@@ -50,7 +51,7 @@
         &-text {
 
             font-family: $main-font;
-
+            font-weight: 300;
             margin-right: 2rem;
 
 

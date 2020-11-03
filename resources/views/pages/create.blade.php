@@ -22,8 +22,23 @@
                 <option value="Cookies">Cookies</option>
             </select>
 
-            <label class="create-form__title" for="title">image</label>
-            <button class="crete-form__button">Upload an image</button>
+            <label class="create-form__title" for="title">Image</label>
+            <button class="create-form__button">Upload an image</button>
+
+            <label for="time" class="create-form__title">Time</label>
+            <div class="create-form__time-container">
+                <input type="number" class="create-form__time">
+                <p class="create-form__time-text">Hours</p>
+                <input type="number" class="create-form__time">
+                <p class="create-form__time-text">Minutes</p>
+            </div>
+            <label for="recipe" class="create-form__title">Recipe</label>
+            <textarea name="recipe" class="create-form__input" id="" cols="30" rows="10"></textarea>
+
+            <label for="post" class="create-form__title">Post</label>
+            <textarea name="post" class="create-form__input" id="" cols="30" rows="10"></textarea>
+
+            <button class="create-form__post">Post</button>
         </form>
     </div>
 
