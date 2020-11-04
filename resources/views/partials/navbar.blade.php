@@ -1,7 +1,7 @@
 <div class="navbar">
    
 
-    <div class="navbar-container">
+    <div class="navbar-container reset-this">
 
             <div class="navbar-logo">
                 <img class="navbar-logo--image" src="img/jjsbakes-logo.png" alt="">

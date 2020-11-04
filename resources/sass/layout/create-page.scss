@@ -61,8 +61,10 @@
     }
 
     &__button {
-        min-width: 150px;
-        max-width: 250px;
+        position: relative;
+        display: inline-block;
+        size: 150px;
+
         display: block;
         height: 3.5rem;
         padding: 1em 2em;
@@ -74,6 +76,30 @@
         position: relative;
         z-index: 1;
         display: flex;
+
+        & input[type="file"] {
+            -webkit-appearance: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            text-align: center;
+            position: relative;
+            display: inline-block;
+            // min-width: 150px;
+            // max-width: 250px;
+            // display: block;
+            height: 3.5rem;
+            // padding: 1em 2em;
+            border: none;
+            background: rgba($main-colour, 0.1);
+            color: $secondary-colour;
+            border-radius: 0.3rem 0.3rem 0.1rem 0.1rem;
+            border-bottom: $secondary-colour solid;
+            position: relative;
+            z-index: 1;
+            display: flex;
+        }
 
         &:hover {
             border-bottom: $main-colour solid;

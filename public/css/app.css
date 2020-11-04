@@ -1,6 +1,4 @@
-.container {
-  margin-top: 10rem;
-}
+@charset "UTF-8";
 
 html,
 body {
@@ -476,6 +474,199 @@ textarea {
   padding: 0.2em 0;
 }
 
+.reset-this * {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-duration: 0;
+          animation-duration: 0;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-name: none;
+          animation-name: none;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
+  background: 0;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: transparent;
+  background-image: none;
+  background-origin: padding-box;
+  background-position: 0 0;
+  background-position-x: 0;
+  background-position-y: 0;
+  background-repeat: repeat;
+  background-size: auto auto;
+  border: 0;
+  border-style: none;
+  border-width: medium;
+  border-color: inherit;
+  border-bottom: 0;
+  border-bottom-color: inherit;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-style: none;
+  border-bottom-width: medium;
+  border-collapse: separate;
+  -o-border-image: none;
+     border-image: none;
+  border-left: 0;
+  border-left-color: inherit;
+  border-left-style: none;
+  border-left-width: medium;
+  border-radius: 0;
+  border-right: 0;
+  border-right-color: inherit;
+  border-right-style: none;
+  border-right-width: medium;
+  border-spacing: 0;
+  border-top: 0;
+  border-top-color: inherit;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top-style: none;
+  border-top-width: medium;
+  bottom: auto;
+  box-shadow: none;
+  box-sizing: content-box;
+  caption-side: top;
+  clear: none;
+  clip: auto;
+  color: inherit;
+  -moz-columns: auto;
+       columns: auto;
+  -moz-column-count: auto;
+       column-count: auto;
+  -moz-column-fill: balance;
+       column-fill: balance;
+  -moz-column-gap: normal;
+       column-gap: normal;
+  -moz-column-rule: medium none currentColor;
+       column-rule: medium none currentColor;
+  -moz-column-rule-color: currentColor;
+       column-rule-color: currentColor;
+  -moz-column-rule-style: none;
+       column-rule-style: none;
+  -moz-column-rule-width: none;
+       column-rule-width: none;
+  -moz-column-span: 1;
+       column-span: 1;
+  -moz-column-width: auto;
+       column-width: auto;
+  content: normal;
+  counter-increment: none;
+  counter-reset: none;
+  cursor: auto;
+  direction: ltr;
+  display: inline;
+  empty-cells: show;
+  float: none;
+  font: normal;
+  font-family: inherit;
+  font-size: medium;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  height: auto;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  left: auto;
+  letter-spacing: normal;
+  line-height: normal;
+  list-style: none;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: disc;
+  margin: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  max-height: none;
+  max-width: none;
+  min-height: 0;
+  min-width: 0;
+  opacity: 1;
+  orphans: 0;
+  outline: 0;
+  outline-color: invert;
+  outline-style: none;
+  outline-width: medium;
+  overflow: visible;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  page-break-after: auto;
+  page-break-before: auto;
+  page-break-inside: auto;
+  perspective: none;
+  perspective-origin: 50% 50%;
+  position: static;
+  /* May need to alter quotes for different locales (e.g fr) */
+  quotes: "\201C" "\201D" "\2018" "\2019";
+  right: auto;
+  -moz-tab-size: 8;
+    -o-tab-size: 8;
+       tab-size: 8;
+  table-layout: auto;
+  text-align: inherit;
+  -moz-text-align-last: auto;
+       text-align-last: auto;
+  text-decoration: none;
+  -webkit-text-decoration-color: inherit;
+          text-decoration-color: inherit;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+  text-indent: 0;
+  text-shadow: none;
+  text-transform: none;
+  top: auto;
+  transform: none;
+  transform-style: flat;
+  transition: none;
+  transition-delay: 0s;
+  transition-duration: 0s;
+  transition-property: none;
+  transition-timing-function: ease;
+  unicode-bidi: normal;
+  vertical-align: baseline;
+  visibility: visible;
+  white-space: normal;
+  widows: 0;
+  width: auto;
+  word-spacing: normal;
+  z-index: auto;
+  /* basic modern patch */
+  all: initial;
+  all: unset;
+}
+
+/* basic modern patch */
+
+#reset-this-root {
+  all: initial;
+}
+
+#reset-this-root * {
+  all: unset;
+}
+
 .navbar-logo {
   background-color: #FF7ED8;
   border-radius: 50%;
@@ -806,11 +997,32 @@ textarea {
 }
 
 .create-form__button {
-  min-width: 150px;
-  max-width: 250px;
+  position: relative;
+  display: inline-block;
+  size: 150px;
   display: block;
   height: 3.5rem;
   padding: 1em 2em;
+  border: none;
+  background: rgba(255, 126, 216, 0.1);
+  color: #9D9D9D;
+  border-radius: 0.3rem 0.3rem 0.1rem 0.1rem;
+  border-bottom: #9D9D9D solid;
+  position: relative;
+  z-index: 1;
+  display: flex;
+}
+
+.create-form__button input[type="file"] {
+  -webkit-appearance: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  height: 3.5rem;
   border: none;
   background: rgba(255, 126, 216, 0.1);
   color: #9D9D9D;
