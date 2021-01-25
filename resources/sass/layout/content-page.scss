@@ -1,16 +1,20 @@
 .content-container {
     max-width: $max-width;
+
     margin: auto;
     margin-bottom: 7rem;
-}
+    margin-top: 2rem;
 
-.content-container__cards {
 
-    // border: black 1px solid;
+    .content-container__cards {
 
-    display: grid;
-    gap: 2rem 3.75rem;
-    grid-template-columns: repeat(3, 1fr);
+        // border: black 1px solid;
+
+        display: grid;
+        gap: 2rem 3.75rem;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
 
 
 
@@ -24,12 +28,14 @@
     max-width: 17.5rem;
     min-width: 17.5rem;
     // border: 1px solid $main-colour;
-    border-radius: 3px;
+    border-radius: 15px;
     height: 393px;
     text-align: center;
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
+    background-color: #ffffff;
+
 
 
     @include sublet-shadow
@@ -40,27 +46,34 @@
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
-    width: 97%;
-    font-family: $secondary-font;
+    padding: 0rem 1rem 0rem 1rem;
+    font-family: $main-font;
     font-size: 1.2rem;
+    font-weight: 500;
+
 }
 
 .content-cards__image {
     width: 100%;
-    height: 190px;
+    height: 100%;
     text-align: center;
-    margin-top: 0.5rem;
+
 
 
 }
 
 .cards__image {
-
     max-width: 100%;
-    height: 100%;
+    max-height: 100%;
     overflow: hidden;
     border-radius: 3px;
+    border-radius: 15px 15px 0 0;
     // @include sublet-shadow
+}
+
+.content-cards--svg {
+    max-width: 1rem;
+
 }
 
 .content-cards__title {
@@ -68,23 +81,39 @@
     color: $main-colour;
     padding-bottom: 1rem;
     border-bottom: 1px solid $very-light-grey;
-    font-weight: bolder;
+    font-weight: 500;
 }
 
 
 .content-cards__prep {
     width: 100%;
     color: $secondary-colour;
-    font-weight: bold;
+    font-weight: 300;
     padding-bottom: 1rem;
     border-bottom: 1px solid $very-light-grey;
+    display: flex;
+    justify-content: space-between;
+    // margin-right: 0.5rem;
 }
 
 .content-cards__creator {
-    width: 100%;
+    // width: 100%;
     color: $secondary-colour;
-    font-weight: bold;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    // margin-right: 0.5rem;
+
 }
+
+.content-cards--svg {
+    max-width: 1.5rem;
+    fill: $secondary-colour;
+    // margin-left: 1rem;
+
+}
+
+
 
 .cards-highlight {
     color: $main-colour;
@@ -93,6 +122,7 @@
 .content-cards__view {
     background-color: $main-colour;
     color: white;
+    border-radius: 0 0 15px 15px;
     height: 7rem;
     font-size: 1.2rem;
     display: flex;
@@ -100,8 +130,8 @@
     align-content: center;
     flex-direction: column;
     cursor: pointer;
-    font-family: $secondary-font;
-    font-weight: bold;
+    font-family: $main-font;
+
 
     &:hover {
         background-color: lighten($main-colour, $amount: 3);

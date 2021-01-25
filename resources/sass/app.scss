@@ -1,12 +1,16 @@
+//Base
 @import "base/base";
 @import "base/reset";
 @import "base/variables";
 
+//componants
 @import "componants/images";
 @import "componants/typography";
 
+//Layout
 @import "layout/header";
 @import "layout/welcome";
 @import "layout/showcase";
 @import "layout/content-page";
 @import "layout/create-page";
+@import "layout/page-title";

@@ -3,7 +3,16 @@
 html,
 body {
   max-width: 100%;
-  overflow: visible;
+  background-color: #fdfdfd;
+  opacity: 1;
+  background-image: radial-gradient(#FFCBEF 2px, transparent 2px), radial-gradient(#FFCBEF 2px, #fdfdfd 2px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -680,8 +689,10 @@ textarea {
 .main-heading {
   color: #FF7ED8;
   font-size: 4rem;
-  font-family: "Solway", cursive;
-  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 300;
+  height: 100%;
+  margin: 0;
 }
 
 .main-text {
@@ -700,19 +711,15 @@ textarea {
 }
 
 .navbar {
-  width: 100%;
   display: flex;
-  background: #ff58cd;
-  background: linear-gradient(299deg, #ff58cd 0%, #ff7ed8 75%);
-  margin-bottom: 3rem;
-  position: fixed;
-  z-index: 999;
-  top: 0;
+  background-color: #FF7ED8;
+  height: 80px;
+  min-width: 100%;
 }
 
 .navbar-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding: 0.5rem 2rem;
 }
@@ -723,16 +730,23 @@ textarea {
 
 .navbar-options {
   display: flex;
+  justify-content: space-between;
   color: white;
   font-size: 2rem;
   font-weight: bold;
-  margin-left: 2rem;
 }
 
 .navbar-options-text {
-  font-family: "Solway", cursive;
+  font-family: "Montserrat Alternates", sans-serif;
   font-weight: 300;
-  margin-right: 2rem;
+  color: #FFCBEF;
+  padding-left: 1rem;
+}
+
+.navbar-options-text--active {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: white;
+  font-weight: 400;
 }
 
 .navbar-options__link:link {
@@ -751,7 +765,6 @@ textarea {
 }
 
 .navbar-options__link:hover {
-  color: inherit;
   cursor: pointer;
   -webkit-text-decoration: underline 2px;
           text-decoration: underline 2px;
@@ -759,7 +772,7 @@ textarea {
 }
 
 .header-container {
-  width: 100%;
+  width: inherit;
   background-color: white;
   padding: 0.5rem 2rem;
 }
@@ -767,6 +780,7 @@ textarea {
 .content {
   width: 960px;
   margin: auto;
+  margin-top: 2rem;
   text-align: center;
 }
 
@@ -778,7 +792,7 @@ textarea {
 
 .showcase-title {
   text-align: center;
-  margin-top: 7rem;
+  margin-top: 2rem;
 }
 
 .showcase-container {
@@ -827,8 +841,8 @@ textarea {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-family: "M PLUS Rounded 1c", sans-serif;
-  font-weight: bolder;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: normal;
   font-size: 1.5rem;
   text-align: center;
   opacity: 0;
@@ -849,9 +863,10 @@ textarea {
   max-width: 960px;
   margin: auto;
   margin-bottom: 7rem;
+  margin-top: 2rem;
 }
 
-.content-container__cards {
+.content-container .content-container__cards {
   display: grid;
   gap: 2rem 3.75rem;
   grid-template-columns: repeat(3, 1fr);
@@ -864,12 +879,13 @@ textarea {
 .content-cards {
   max-width: 17.5rem;
   min-width: 17.5rem;
-  border-radius: 3px;
+  border-radius: 15px;
   height: 393px;
   text-align: center;
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
+  background-color: #ffffff;
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
 }
 
@@ -878,23 +894,28 @@ textarea {
   flex-direction: column;
   justify-content: space-evenly;
   height: 100%;
-  width: 97%;
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  padding: 0rem 1rem 0rem 1rem;
+  font-family: "Montserrat Alternates", sans-serif;
   font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .content-cards__image {
   width: 100%;
-  height: 190px;
+  height: 100%;
   text-align: center;
-  margin-top: 0.5rem;
 }
 
 .cards__image {
   max-width: 100%;
-  height: 100%;
+  max-height: 100%;
   overflow: hidden;
   border-radius: 3px;
+  border-radius: 15px 15px 0 0;
+}
+
+.content-cards--svg {
+  max-width: 1rem;
 }
 
 .content-cards__title {
@@ -902,21 +923,29 @@ textarea {
   color: #FF7ED8;
   padding-bottom: 1rem;
   border-bottom: 1px solid #f0f0f0;
-  font-weight: bolder;
+  font-weight: 500;
 }
 
 .content-cards__prep {
   width: 100%;
   color: #9D9D9D;
-  font-weight: bold;
+  font-weight: 300;
   padding-bottom: 1rem;
   border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .content-cards__creator {
-  width: 100%;
   color: #9D9D9D;
-  font-weight: bold;
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-cards--svg {
+  max-width: 1.5rem;
+  fill: #9D9D9D;
 }
 
 .cards-highlight {
@@ -926,6 +955,7 @@ textarea {
 .content-cards__view {
   background-color: #FF7ED8;
   color: white;
+  border-radius: 0 0 15px 15px;
   height: 7rem;
   font-size: 1.2rem;
   display: flex;
@@ -933,8 +963,7 @@ textarea {
   align-content: center;
   flex-direction: column;
   cursor: pointer;
-  font-family: "M PLUS Rounded 1c", sans-serif;
-  font-weight: bold;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
 .content-cards__view:hover {
@@ -1087,5 +1116,22 @@ textarea {
 .create-form__post:hover {
   background-color: #ff8ddd;
   color: #f7f7f7;
+}
+
+.page-title {
+  background-color: #FFCBEF;
+  height: 80px;
+  padding: 0;
+}
+
+.page-title--container {
+  position: relative;
+}
+
+.main-heading {
+  text-align: left;
+  display: inline-block;
+  position: inherit;
+  top: 8px;
 }
 

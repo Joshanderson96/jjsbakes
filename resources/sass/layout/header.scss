@@ -1,24 +1,18 @@
 .navbar {
-
-    width: $full-width;
-
     display: flex;
-    // background: radial-gradient(circle, rgba(255, 174, 231, 1) 2%, rgba(255, 126, 216, 1) 20%);
-    background: rgb(255, 88, 205);
-    background: linear-gradient(299deg, rgba(255, 88, 205, 1) 0%, rgba(255, 126, 216, 1) 75%);
-    margin-bottom: 3rem;
-    position: fixed;
-    z-index: 999;
-    top: 0;
+    background-color: $main-colour;
+    height: 80px;
+    min-width: 100%;
 
     &-container {
 
 
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         // margin-bottom: 3rem;
         padding: 0.5rem 2rem;
+
 
 
     }
@@ -38,11 +32,13 @@
 
     &-options {
         display: flex;
+        justify-content: space-between;
         color: white;
         font-size: 2rem;
         font-weight: bold;
-        margin-left: 2rem;
-        // margin: 5.5rem;
+        // width: 25% // margin: 5.5rem;
+
+
 
 
 
@@ -52,8 +48,18 @@
 
             font-family: $main-font;
             font-weight: 300;
-            margin-right: 2rem;
+            color: $lighter-main;
+            padding-left: 1rem;
 
+
+
+
+            // margin-right: 2rem;
+            &--active {
+                font-family: $main-font;
+                color: white;
+                font-weight: 400;
+            }
 
 
 
@@ -76,10 +82,12 @@
             }
 
             &:hover {
-                color: inherit;
+
                 cursor: pointer;
                 text-decoration: underline 2px;
+
                 transition: 0.2s;
+
             }
         }
 
@@ -89,7 +97,7 @@
 }
 
 .header-container {
-    width: $full-width;
+    width: inherit;
     background-color: white;
     padding: 0.5rem 2rem;
 }

@@ -6,7 +6,7 @@
 
 .showcase-title {
     text-align: center;
-    margin-top: 7rem;
+    margin-top: 2rem;
 }
 
 .showcase-container {
@@ -65,8 +65,8 @@
             left: 50%;
             transform: translate(-50%, -50%);
             color: white;
-            font-family: $secondary-font;
-            font-weight: bolder;
+            font-family: $main-font;
+            font-weight: normal;
             font-size: 1.5rem;
             text-align: center;
             opacity: 0;
