@@ -376,7 +376,7 @@ function Cancel(message) {
 
 Cancel.prototype.toString = function toString() {
   return 'Cancel' + (this.message ? ': ' + this.message : '');
-};http://127.0.0.1:8000/content
+};
 
 Cancel.prototype.__CANCEL__ = true;
 
@@ -19366,6 +19366,17 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/sass/app.scss":
+/*!*********************************!*\
+  !*** ./resources/sass/app.scss ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
 /*!*************************************************************!*\
   !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
@@ -19374,7 +19385,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /home/josh/Documents/Web-Projects/Laravel/jjs-bakes/resources/js/app.js */"./resources/js/app.js");
-!(function webpackMissingModule() { var e = new Error("Cannot find module '/home/josh/Documents/Web-Projects/Laravel/jjs-bakes/resources/sass/app.scss'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+module.exports = __webpack_require__(/*! /home/josh/Documents/Web-Projects/Laravel/jjs-bakes/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

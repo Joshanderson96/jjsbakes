@@ -1,8 +1,11 @@
 @extends('partials.layout')
 
+@section('pageTitle', 'Gallery')
+    
+
 @section('content')
     @extends('partials.navbar')
-
+    @section('pageName', 'Gallery')
     <div class="content-container">      
             
             
@@ -138,4 +141,4 @@
     </div>
     </div>
 
-@endsection
+@stop

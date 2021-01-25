@@ -691,7 +691,6 @@ textarea {
   font-size: 4rem;
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 300;
-  height: 100%;
   margin: 0;
 }
 
@@ -721,7 +720,6 @@ textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 2rem;
 }
 
 .navbar-logo--image {
@@ -879,6 +877,7 @@ textarea {
 .content-cards {
   max-width: 17.5rem;
   min-width: 17.5rem;
+  margin-bottom: 2rem;
   border-radius: 15px;
   height: 393px;
   text-align: center;
@@ -1126,6 +1125,7 @@ textarea {
 
 .page-title--container {
   position: relative;
+  max-width: 960px;
 }
 
 .main-heading {

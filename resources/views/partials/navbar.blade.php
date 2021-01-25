@@ -1,10 +1,9 @@
-<div class="navbar">
-   
+<div class="navbar"> 
 
     <div class="navbar-container reset-this">
 
             <div class="navbar-logo">
-                <img class="navbar-logo--image" src="css/img/jjsbakes-logo.png" alt="">
+                <img class="navbar-logo--image" src="img/jjsbakes-logo.png" alt="">
             </div>
             
             
@@ -22,4 +21,11 @@
        
         
     </div>      
+</div>
+
+<div class="page-title">
+    <div class="container page-title--container">
+        <h2 class="main-heading">@yield('pageName')</h2>
+    </div>
+    
 </div>
