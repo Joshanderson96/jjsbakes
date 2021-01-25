@@ -12,7 +12,7 @@
 
         <form action="" id="validate_form" class="create-form" data-parsley-validate="">
             <label class="create-form__title" for="title">Title</label>
-            <input type="text" id="title" class="create-form__input " data-parsley-minlength="7" data-parsley-minlength-message="Name must be at least 7 characters" data-parsley-required="true" >
+            <input type="text" id="title" class="create-form__input "  >
 
             <label class="create-form__title" for="category">Category</label>
             <select name="category" class="create-form__select">
@@ -40,8 +40,8 @@
             <label for="post" class="create-form__title">Post</label>
             <textarea name="post" class="create-form__input" id="" cols="30" rows="10" required></textarea>
 
-
             <input type="submit" class="create-form__post" value="Post">
+
             
         </form>
     </div>

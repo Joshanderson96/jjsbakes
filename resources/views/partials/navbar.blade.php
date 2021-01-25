@@ -9,7 +9,7 @@
             
         
             <ul class="navbar-options">
-                <a class="navbar-options__link" href="/"><li class="navbar-options-text">Home</li></a>
+                <a class="navbar-options__link" href="/home"><li class="navbar-options-text">Home</li></a>
 
                 <a class="navbar-options__link" href="/content"><li class="navbar-options-text navbar-options-text--active">Content</li></a>
                 <a class="navbar-options__link" href=""><li class="navbar-options-text navbar-options-text--center">About</li></a>

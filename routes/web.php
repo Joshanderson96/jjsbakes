@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('pages.home');
 });
 
@@ -24,5 +24,7 @@ Route::get('/content', function () {
 Route::get('/create', function () {
     return view('pages.create');
 });
+
+
 
 Route::resource('/blogs', 'BlogsController');
