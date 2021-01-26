@@ -9,7 +9,7 @@
             
         
         <ul class="navbar-options">
-            <a class="navbar-options__link" href="/home"><li class="navbar-options-text">Home</li></a>
+            <a class="navbar-options__link" href="/"><li class="navbar-options-text">Home</li></a>
 
             <a class="navbar-options__link" href="/content"><li class="navbar-options-text navbar-options-text--active">Content</li></a>
                 <a class="navbar-options__link" href=""><li class="navbar-options-text navbar-options-text--center">About</li></a>
@@ -17,6 +17,10 @@
             <a class="navbar-options__link" href=""><li class="navbar-options-text">Socials</li></a>
         </ul>
         
+        
+        
+    </div>  
+    <div class="navbar-auth-container">
         @if  (Route::has('login'))
             <div class="auth">
                 @auth 
@@ -27,16 +31,15 @@
                         @csrf
                     </form>
                 @else
-                    <a href="{{ route('login') }} ">Login</a>
+                    <a href="{{ route('login') }}"><button class="login_button login_button--login" href="{{ route('login') }} ">Login</button></a><!--
 
                     @if (Route::has('register'))
-                        <a href="{{ route('register') }}">Register</a>
+                    --><a href="{{ route('register') }}"><button class="login_button login_button--register" >Register</button></a> 
                     @endif
                 @endif    
             </div>
         @endif
-        
-    </div>      
+    </div>    
 </div>
 
 <div class="page-title">

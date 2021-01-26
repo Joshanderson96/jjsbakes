@@ -709,11 +709,42 @@ textarea {
   max-width: 100%;
 }
 
+.login_button {
+  padding: 1rem 1rem;
+  width: 10rem;
+  font-weight: 500;
+}
+
+.login_button--login {
+  background-color: #FFCBEF;
+  color: #FF7ED8;
+  font-family: "Montserrat Alternates", sans-serif;
+  border-radius: 0.5rem 0 0 0.5rem;
+  border: 0;
+}
+
+.login_button--login:hover {
+  background-color: #ffc5ed;
+}
+
+.login_button--register {
+  background-color: #f0f0f0;
+  color: #FF7ED8;
+  font-family: "Montserrat Alternates", sans-serif;
+  border-radius: 0 0.5rem 0.5rem 0;
+  border: 0;
+}
+
+.login_button--register:hover {
+  background-color: #ededed;
+}
+
 .navbar {
   display: flex;
   background-color: #FF7ED8;
   height: 80px;
   min-width: 100%;
+  align-items: center;
 }
 
 .navbar-container {
@@ -767,6 +798,11 @@ textarea {
   -webkit-text-decoration: underline 2px;
           text-decoration: underline 2px;
   transition: 0.2s;
+}
+
+.navbar-auth-container {
+  margin: auto;
+  margin-right: 1rem;
 }
 
 .header-container {
@@ -992,7 +1028,7 @@ textarea {
   border-bottom: 0.2rem solid #9D9D9D;
   border-radius: 0.3rem 0.3rem 0.1rem 0.1rem;
   width: 100%;
-  background: rgba(255, 126, 216, 0.1);
+  background: #f0f0f0;
   padding: 1em 2em;
   padding-left: 0.5rem;
   color: grey;
@@ -1015,7 +1051,7 @@ textarea {
   background-position: calc(100% - 20px) center;
   padding: 1em 2em;
   background-repeat: no-repeat;
-  background-color: rgba(255, 126, 216, 0.1);
+  background-color: #f0f0f0;
   padding-left: 0.5rem;
   color: grey;
 }
@@ -1052,7 +1088,7 @@ textarea {
   display: inline-block;
   height: 3.5rem;
   border: none;
-  background: rgba(255, 126, 216, 0.1);
+  background: #f0f0f0;
   color: #9D9D9D;
   border-radius: 0.3rem 0.3rem 0.1rem 0.1rem;
   border-bottom: #9D9D9D solid;
@@ -1078,7 +1114,7 @@ textarea {
   border-radius: 0.3rem 0.3rem 0.1rem 0.1rem;
   width: 10%;
   font-size: 2rem;
-  background: rgba(255, 126, 216, 0.1);
+  background: #f0f0f0;
   color: grey;
   text-align: center;
   height: 3.5rem;

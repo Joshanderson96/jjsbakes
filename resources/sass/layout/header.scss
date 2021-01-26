@@ -3,6 +3,7 @@
     background-color: $main-colour;
     height: 80px;
     min-width: 100%;
+    align-items: center;
 
     &-container {
 
@@ -92,7 +93,14 @@
 
     }
 
+    &-auth-container {
+        margin: auto;
+        margin-right: 1rem;
 
+
+
+
+    }
 }
 
 .header-container {
