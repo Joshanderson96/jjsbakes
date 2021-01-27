@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Auth;
+
 
 class BlogController extends Controller
 {
@@ -12,9 +15,15 @@ class BlogController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('auth', ['except' => ['home', 'pages.content']]);
+    }
+
     public function index()
     {
-        //
+        $blog = Blog::all();
+        return view('pages.content', compact('blog'));
     }
 
     /**
@@ -24,7 +33,10 @@ class BlogController extends Controller
      */
     public function create()
     {
-        //
+        if (Auth::check()) {
+            return view('pages.create');
+        }
+        
     }
 
     /**
@@ -35,7 +47,21 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validateData = $request->validate([
+            'title' => 'required',
+            'user_id' => 'reqired',
+            'hours' => 'required',
+            'minutes' => 'required',
+            'recipe' => 'required',
+            'post' => 'required',
+        ]);
+
+        $validateData['user_id'] = Auth::user()->id;
+
+        Blog::create($validateData);
+        
+
+        return redirect('blogs');
     }
 
     /**
@@ -46,7 +72,7 @@ class BlogController extends Controller
      */
     public function show(Blog $blog)
     {
-        //
+        
     }
 
     /**
@@ -57,7 +83,7 @@ class BlogController extends Controller
      */
     public function edit(Blog $blog)
     {
-        //
+        
     }
 
     /**

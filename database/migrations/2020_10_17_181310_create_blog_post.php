@@ -13,17 +13,24 @@ class CreateBlogPost extends Migration
      */
     public function up()
     {
-        Schema::create('blog_post', function (Blueprint $table) {
+        Schema::create('blogs', function (Blueprint $table) {
             $table->id();
             $table->text('title');
             $table->integer('user_id')->unsigned();
             $table->integer('hours');
             $table->integer('minutes');
-            $table->text('reciepe');
-            $table->text('description');
-            $table->string('image')->nullable();
+            $table->text('recipe');
+            $table->text('post');
+            // $table->string('image')->nullable();
             $table->timestamps();
+
+            // $table->foreign('user_id')
+            //     ->references('id')
+            //     ->on('users')
+            //     ->onDelete('cascade');
         });
+
+
     }
 
     /**

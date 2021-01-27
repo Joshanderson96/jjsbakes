@@ -15,7 +15,7 @@
 
         <div class="content-cards">
             <div class="content-cards__image">
-                <img class="cards__image" src="img/Crunchie-brownie.jpg" alt="">
+                <img class="cards__image" src="/img/Crunchie-brownie.jpg" alt="">
             </div>              
             
             <div class="content-cards-text">
@@ -41,7 +41,7 @@
 
         <div class="content-cards">
             <div class="content-cards__image">
-                <img class="cards__image" src="img/Crunchie-brownie.jpg" alt="">
+                <img class="cards__image" src="/img/Crunchie-brownie.jpg" alt="">
             </div>              
             
             <div class="content-cards-text">
@@ -66,7 +66,7 @@
 
         <div class="content-cards">
             <div class="content-cards__image">
-                <img class="cards__image" src="img/marble-millionair-shortbread.jpg" alt="">
+                <img class="cards__image" src="/img/marble-millionair-shortbread.jpg" alt="">
             </div>              
             
             <div class="content-cards-text">
@@ -91,7 +91,7 @@
 
         <div class="content-cards">
             <div class="content-cards__image">
-                <img class="cards__image" src="img/Crunchie-brownie.jpg" alt="">
+                <img class="cards__image" src="/img/Crunchie-brownie.jpg" alt="">
             </div>              
             
             <div class="content-cards-text">
@@ -116,7 +116,7 @@
 
         <div class="content-cards">
             <div class="content-cards__image">
-                <img class="cards__image" src="img/Crunchie-brownie.jpg" alt="">
+                <img class="cards__image" src="/img/Crunchie-brownie.jpg" alt="">
             </div>              
             
             <div class="content-cards-text">

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,14 +18,15 @@ Route::get('/', function () {
     return view('pages.home');
 });
 
-Route::get('/content', function () {
-    return view('pages.content');
-});
+// Route::get('/blogs/content', function () {
+//     return view('pages.content');
+// // });
 
-Route::get('/create', function () {
-    return view('pages.create');
-});
+// Route::get('/blogs/create', function () {
+//     return view('pages.create');
+// });
 
 
 
-Route::resource('/blogs', 'BlogsController');
+
+Route::resource('blogs', BlogController::class);

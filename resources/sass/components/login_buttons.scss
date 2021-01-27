@@ -3,10 +3,7 @@
     width: 10rem;
     font-weight: 500;
 
-    &:hover {
-        // font-weight: bold;
-
-    }
+    @include subtle-shadow;
 
     &--login {
         background-color: $lighter-main;
