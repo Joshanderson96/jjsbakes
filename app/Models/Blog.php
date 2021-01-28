@@ -13,8 +13,15 @@ class Blog extends Model
         'title',
         'user_id',
         'hours',
+        'category',
         'minutes',
         'recipe',
-        'post'
+        'post',
+        'image',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class)->select(['id', 'name']);
+    }
 }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use App\Models\User;
+use App\Models\Photo;
 use Illuminate\Http\Request;
 use Auth;
 
@@ -22,7 +23,9 @@ class BlogController extends Controller
 
     public function index()
     {
-        $blog = Blog::all();
+        
+        $blog = \App\Models\Blog::latest()->get();
+
         return view('pages.content', compact('blog'));
     }
 
@@ -51,17 +54,29 @@ class BlogController extends Controller
             'title' => 'required',
             'user_id' => 'reqired',
             'hours' => 'required',
+            'category' => 'required',
             'minutes' => 'required',
             'recipe' => 'required',
             'post' => 'required',
-        ]);
+            'image' => 'required|image|mimes:jpg,png,jpeg',
+    
+           ]);
 
-        $validateData['user_id'] = Auth::user()->id;
+           $imageName = date('YmdHis') .'.'. $request->image->getClientOriginalExtension();
+           $request->image->move(public_path('image'), $imageName);
+           $validateData['image'] = $imageName;
+    
+        //    $imageName = time().'.'.$request->image->hashName();
+        //    $request->image->move(public_path('storage/images'), $imageName);
+    
+           $validateData['user_id'] = Auth::user()->id;
+           
+           Blog::create($validateData);
+           
+           
+    
+           return redirect('blogs');
 
-        Blog::create($validateData);
-        
-
-        return redirect('blogs');
     }
 
     /**

@@ -18,7 +18,7 @@
             <h1 class="main-heading">Create Your Post</h1>
         </div>
 
-        <form action="{{ route('blogs.store') }}" class="create-form" method="POST">
+        <form action="{{ route('blogs.store') }}" class="create-form" method="POST" enctype="multipart/form-data">
             @csrf
             <label class="create-form__title" for="title">Title</label>
             <input name="title" type="text" id="title" class="create-form__input "  >
@@ -31,9 +31,8 @@
                 <option value="Cookies">Cookies</option>
             </select>
 
-            {{-- <label class="create-form__title" for="upload_image" required>Image</label>
-            
-            <input name="upload_image" type="file" /> --}}
+            <label class="create-form__title" for="image" required>Image</label>
+            <input  name="image" type="file" />
             
 
             <label for="time" class="create-form__title">Time</label>
