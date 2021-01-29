@@ -4,7 +4,7 @@
     font-family: $main-font;
     font-weight: 300;
 
-    margin: 0;
+    // margin: 0;
 
 
 }
@@ -22,5 +22,33 @@
     font-size: 1.3rem;
     font-weight: bold;
     max-width: 100%;
+
+}
+
+.recipe-heading {
+    color: $dark-grey;
+    font-family: $secondary-font;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.recipe-text {
+    color: $dark-grey;
+    font-family: $main-font;
+    font-weight: 400;
+
+}
+
+.blog-post--title {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+.blog-post--post {
+    color: $dark-grey;
+    font-family: $main-font;
+    font-weight: 400;
+    margin-top: 1rem;
 
 }

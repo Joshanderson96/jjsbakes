@@ -42,9 +42,3 @@
     </div>    
 </div>
 
-<div class="page-title">
-    <div class="container page-title--container">
-        <h2 class="main-heading">@yield('pageName')</h2>
-    </div>
-    
-</div>

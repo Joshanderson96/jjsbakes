@@ -24,10 +24,11 @@
         border-bottom: 0.2rem solid $secondary-colour;
         border-radius: 0.3rem 0.3rem 0.1rem 0.1rem;
         width: 100%;
-        background: $very-light-grey;
-        padding: 1em 2em;
-        padding-left: 0.5rem;
-        color: grey;
+
+        // background: $very-light-grey;
+        // padding: 1em 2em;
+        // padding-left: 0.5rem;
+        // color: grey;
 
 
 
@@ -40,19 +41,21 @@
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-        width: 50%;
+        // width: 50%;
         border: none;
         border-bottom: 0.2rem solid $secondary-colour;
         border-radius: 0.3rem 0.3rem 0.1rem 0.1rem;
-        background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='grey'><polygon points='0,0 100,0 50,50'/></svg>") no-repeat;
-        background-size: 12px;
-        background-position: calc(100% - 20px) center;
-        padding: 1em 2em;
+        // background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='grey'><polygon points='0,0 100,0 50,50'/></svg>") no-repeat;
+        // background-size: 12px;
+        // background-position: calc(100% - 20px) center;
+        // padding: 1em 2em;
         background-repeat: no-repeat;
         background-color: $very-light-grey;
+        text-align: center;
+        font-size: 2rem;
 
-        padding-left: 0.5rem;
-        color: grey;
+        // padding-left: 0.5rem;
+        color: $main-colour;
 
 
         &:focus {
@@ -119,15 +122,16 @@
         border: none;
         border-bottom: 0.2rem solid $secondary-colour;
         border-radius: 0.3rem 0.3rem 0.1rem 0.1rem;
-        width: 10%;
-        font-size: 2rem;
+        width: 4rem;
+
+
         background: $very-light-grey;
 
 
 
         color: grey;
         text-align: center;
-        height: 3.5rem;
+
 
 
 
@@ -138,11 +142,10 @@
         }
 
         &-text {
-            font-family: $secondary-font;
-            color: $main-colour;
-            font-size: 1.5rem;
+
+
             margin: 0 1rem;
-            align-self: end;
+            align-self: center;
         }
 
 

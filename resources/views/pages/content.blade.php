@@ -9,7 +9,21 @@
 
 
     <div class="content-container">      
+        <div class="content-createbutton">
             
+            @if  (Route::has('login'))
+                <div class="auth">
+                    @auth 
+                        <a  href="blogs/create">
+                <button class="create-form__post">Create a Post</button>
+            </a>
+                    @else
+                        
+                    @endif    
+                </div>
+            @endif
+            
+        </div>
          <div class="content-container__cards">   
     @foreach ($blog as $data)
         
@@ -17,10 +31,6 @@
 
             <div class="content-cards">
                 <div class="content-cards__image">
-                    {{-- <img class="cards__image" src="{{ '/public/image/'.$data->image }}" alt=""> --}}
-                    {{-- <img src="{{ URL::asset('storage/images'.$data->image) }}"> --}}
-                    {{-- <img src="{{ Storage::url("/storage/app/{$data->image}") }}" alt="{{ $data->image }}" />
-                     --}}
                      <img class="cards__image" src="{{ url('image/'.$data->image)}}" alt="" />
                 </div>              
                 
@@ -39,9 +49,10 @@
                     
                 </div>
 
-                <div class="content-cards__view">
+                <a href="/blogs/{{ $data->id}}" class="content-cards__view"><div  href="/blogs/{{ $data->id}}">
                     <p class="cards-view">View</p>
-                </div>
+                    {{-- <a class="cards-view" href="/blogs/{{ $data->id}}">view</a> --}}
+                </div></a>
             </div>
             
 

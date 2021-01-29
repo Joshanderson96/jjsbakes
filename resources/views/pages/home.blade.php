@@ -1,15 +1,16 @@
 @extends('partials.layout')
 @section('pageTitle', 'Home')
-
+@extends('partials.navbar')
+    
 @section('content')
-    @extends('partials.navbar')
-    @section('pageName', 'Home')
-        
+    
+    
     
 
     
 
     <div class="container">
+        
         <div class="content">
             <div class="content-welcome">
                 <div class="content-welcome--title">
@@ -86,4 +87,5 @@
             
         </div>
     </div>
+    
 @stop

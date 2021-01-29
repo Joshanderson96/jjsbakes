@@ -18,7 +18,7 @@ class BlogController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth', ['except' => ['home', 'pages.content']]);
+        $this->middleware('auth', ['except' => ['home', 'index']]);
     }
 
     public function index()
@@ -85,9 +85,9 @@ class BlogController extends Controller
      * @param  \App\Models\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function show(Blog $blog)
-    {
-        
+    public function show($id)
+    {        
+        return view('pages.show', ['blogs' => Blog::findOrFail($id)]);
     }
 
     /**
