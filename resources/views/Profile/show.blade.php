@@ -1,14 +1,7 @@
 @extends('layouts.layout')
 
-@section('pageTitle', 'Gallery')
-    
-
 @section('content')
-    
-    @section('pageName', 'Gallery')
-
-
-    <div class="content-container">      
+<div class="content-container">      
         <div class="content-createbutton">
             
             @if  (Route::has('login'))
@@ -61,5 +54,5 @@
     @endforeach
         </div>
     </div>
-
-@stop
+    
+@endsection

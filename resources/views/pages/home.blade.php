@@ -1,6 +1,8 @@
-@extends('partials.layout')
+@extends('layouts.layout')
+
+
 @section('pageTitle', 'Home')
-@extends('partials.navbar')
+
     
 @section('content')
     

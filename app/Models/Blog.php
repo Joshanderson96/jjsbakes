@@ -24,4 +24,9 @@ class Blog extends Model
     {
         return $this->belongsTo(User::class)->select(['id', 'name']);
     }
+
+    public function profile()
+    {
+        return $this->belongsTo(Profile::class);
+    }
 }

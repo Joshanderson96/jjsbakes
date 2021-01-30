@@ -1,7 +1,9 @@
 <?php
-
+namespace App\Http\controllers;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\UserController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +16,6 @@ use App\Http\Controllers\BlogController;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home');
-});
 
 // Route::get('/blogs/content', function () {
 //     return view('pages.content');
@@ -30,3 +29,5 @@ Route::get('/', function () {
 
 
 Route::resource('blogs', BlogController::class);
+
+Route::get('user/{id}', [UserController::class, 'show']);

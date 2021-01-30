@@ -1,8 +1,8 @@
-@extends('partials.layout')
+@extends('layouts.layout')
 @section('pageTitle', 'Show')
 
 @section('content')
-    @extends('partials.navbar')
+    
     
    
    <div class="blogHeading">
@@ -22,7 +22,7 @@
        <div class="recipe-container">
            <div class="recipe-container--inner">
                <h4 class="recipe-heading">Recipe:</h4>
-        <p class="recipe-text">{{ $blogs->recipe }} </p>
+        <p class="recipe-text">{!! $blogs->recipe !!} </p>
            </div>
        
    </div>
@@ -35,7 +35,7 @@
    <div class="blog-post">
        <h3 class="blog-post--title main-heading">Post</h3>
 
-       <p class="blog-post--post">{{ $blogs->post }} </p>
+       <p class="blog-post--post">{!! $blogs->post !!} </p>
    </div>
 
 

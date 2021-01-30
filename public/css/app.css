@@ -726,7 +726,6 @@ textarea {
 
 .blog-post--title {
   font-size: 2.5rem;
-  margin-top: 2rem;
 }
 
 .blog-post--post {
@@ -747,7 +746,7 @@ textarea {
   background-color: #FFCBEF;
   color: #FF7ED8;
   font-family: "Montserrat Alternates", sans-serif;
-  border-radius: 0.5rem 0 0 0.5rem;
+  border-radius: 5px 0 0 5px;
   border: 0;
 }
 
@@ -759,12 +758,65 @@ textarea {
   background-color: #f0f0f0;
   color: #FF7ED8;
   font-family: "Montserrat Alternates", sans-serif;
-  border-radius: 0 0.5rem 0.5rem 0;
+  border-radius: 0 5px 5px 0;
   border: 0;
 }
 
 .login_button--register:hover {
   background-color: #ededed;
+}
+
+.auth-form-container {
+  margin: auto;
+  width: 33.33%;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
+}
+
+.auth-form__input {
+  width: 100%;
+  height: 2.5rem;
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.auth-form__input:focus {
+  border: solid 1px #FF7ED8;
+}
+
+.auth-form__title {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 1.5rem;
+  color: #FF7ED8;
+  width: 100%;
+  display: inline-block;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.auth-form__button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  text-align: center;
+  background-color: #FF7ED8;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: white;
+  font-size: 2rem;
+  border: 0;
+  border-radius: 5px;
+}
+
+.auth-form__button:hover {
+  background-color: #ff74d5;
+  color: #f7f7f7;
 }
 
 .navbar {
@@ -942,7 +994,7 @@ textarea {
   max-width: 17.5rem;
   min-width: 17.5rem;
   margin-bottom: 1.5rem;
-  border-radius: 15px;
+  border-radius: 5px;
   height: 393px;
   text-align: center;
   display: flex;
@@ -973,7 +1025,7 @@ textarea {
 .cards__image {
   width: 100%;
   overflow: hidden;
-  border-radius: 15px 15px 0 0;
+  border-radius: 5px 5px 0 0;
 }
 
 .content-cards--svg {
@@ -1017,7 +1069,7 @@ textarea {
 .content-cards__view {
   background-color: #FF7ED8;
   color: white;
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 5px 5px;
   height: 7rem;
   font-size: 1.2rem;
   display: flex;
@@ -1205,10 +1257,7 @@ textarea {
 .recipe-container--inner {
   background-color: #FFCBEF;
   padding: 1rem;
-}
-
-.recipe-heading {
-  background-color: #FFCBEF;
+  border-radius: 5px;
 }
 
 .blog-image--container {
@@ -1217,18 +1266,24 @@ textarea {
 
 .blog-image {
   max-width: 100%;
+  border-radius: 5px;
 }
 
 .blog-post {
   width: 100%;
+  background-color: #fdfdfd;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 5px;
 }
 
 .blog-info {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
-  background-color: #f0f0f0;
+  background-color: #fafafa;
   padding: 1rem;
+  border-radius: 5px;
 }
 
 .blog-info--text {

@@ -11,7 +11,7 @@
 
 .recipe-container {
     width: 27.5rem;
-
+    
 
     color: $dark-grey;
     // padding: 1rem;
@@ -19,13 +19,10 @@
     &--inner {
         background-color: $lighter-main;
         padding: 1rem;
+        border-radius: $border-radius;
     }
 }
 
-
-.recipe-heading {
-    background-color: $lighter-main;
-}
 
 .blog-image--container {
     width: 27.5rem;
@@ -35,11 +32,15 @@
 
 .blog-image {
     max-width: 100%;
+    border-radius: $border-radius;
 }
 
 .blog-post {
     width: 100%;
-
+    background-color: lighten($very-light-grey, $amount: 5);
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: $border-radius;
 }
 
 .blog-info {
@@ -47,8 +48,9 @@
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
-    background-color: $very-light-grey;
+    background-color: lighten($very-light-grey, $amount: 4);
     padding: 1rem;
+    border-radius: $border-radius;
 
     &--text {
         color: $main-colour;
