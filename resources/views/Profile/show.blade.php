@@ -1,30 +1,14 @@
 @extends('layouts.layout')
 
 @section('content')
-<div class="content-container">      
-        <div class="content-createbutton">
-            
-            @if  (Route::has('login'))
-                <div class="auth">
-                    @auth 
-                        <a  href="blogs/create">
-                <button class="create-form__post">Create a Post</button>
-            </a>
-                    @else
-                        
-                    @endif    
-                </div>
-            @endif
-            
-        </div>
-         <div class="content-container__cards">   
-    @foreach ($blog as $data)
-        
-        
+    <div class="content-container">      
+        <h1 class="main-heading">{{ $user->name }}</h1>
 
+        <div class="content-container__cards">  
+            @foreach ($blog as $data)
             <div class="content-cards">
                 <div class="content-cards__image">
-                     <img class="cards__image" src="{{ url('image/'.$data->image)}}" alt="" />
+                    <img class="cards__image" src="{{ url('image/'.$data->image)}}" alt="" />
                 </div>              
                 
                 <div class="content-cards-text">
@@ -41,17 +25,11 @@
                     </div>
                     
                 </div>
-
                 <a href="/blogs/{{ $data->id}}" class="content-cards__view"><div  href="/blogs/{{ $data->id}}">
                     <p class="cards-view">View</p>
-                    {{-- <a class="cards-view" href="/blogs/{{ $data->id}}">view</a> --}}
                 </div></a>
             </div>
-            
-
-        
-        
-    @endforeach
+        @endforeach
         </div>
     </div>
     

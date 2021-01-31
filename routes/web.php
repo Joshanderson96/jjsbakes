@@ -17,9 +17,9 @@ use App\Http\Controllers\UserController;
 */
 
 
-// Route::get('/blogs/content', function () {
-//     return view('pages.content');
-// // });
+Route::get('/', function () {
+    return view('pages.home');
+});
 
 // Route::get('/blogs/create', function () {
 //     return view('pages.create');

@@ -1,4 +1,4 @@
-@extends('partials.layout')
+@extends('layouts.layout')
 
 @section('content')
 
@@ -8,25 +8,26 @@
     <form action="{{ route('register') }} " class="auth-form-container" method="post">
         @csrf
 
+        <div class="auth-form__heading">
+            <h1 class="main-heading auth-form__heading--text" >Register</h1>
+        </div>
+
         <div>
-            <label class="auth-form__title" for="name">Name</label>
-        <input name="name" type="text" id="name" class="auth-form__input @error('name') is-invaild @enderror " value="{{ old('name') }}">
+        <input name="name" type="text" id="name" class="auth-form__input @error('name') is-invaild @enderror " value="{{ old('name') }}" placeholder="Name">
         @error('name')
             <span class="invaild-feedback">
                 <p>Name in invaild</p>
             </span>
         @enderror
         </div>
-<label class="auth-form__title" for="email">Email Address</label>
-        <input name="email" type="email" id="email" class="auth-form__input @error('email') is-invaild @enderror " value="{{ old('email') }}">
+        <input name="email" type="email" id="email" class="auth-form__input @error('email') is-invaild @enderror " value="{{ old('email') }}" placeholder="Email">
         @error('email')
             <span class="invaild-feedback">
                 <p>Email is invaild</p>
             </span>
         @enderror
         <div>
-            <label class="auth-form__title" for="password">Password</label>
-<input name="password" type="password" id="password" class="auth-form__input @error('password') is-invaild @enderror " value="{{ old('password') }}">
+<input name="password" type="password" id="password" class="auth-form__input @error('password') is-invaild @enderror " value="{{ old('password') }}" placeholder="Password">
         @error('password')
             <span class="invaild-feedback">
                 <p>password is invaild</p>
@@ -34,8 +35,7 @@
         @enderror
         </div>
         <div>
-<label class="auth-form__title" for="password"> Confirm Password</label>
-        <input name="password_confirmation" type="password" id="password" class="auth-form__input @error('password_confirmation') is-invaild @enderror " value="{{ old('password_confirmation') }}">
+        <input name="password_confirmation" type="password" id="password" class="auth-form__input @error('password_confirmation') is-invaild @enderror " value="{{ old('password_confirmation') }}" placeholder="Confirm Password">
         @error('password_confirmation')
             <span class="invaild-feedback">
                 <p>Passwrod does not match</p>

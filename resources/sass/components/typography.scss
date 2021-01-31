@@ -1,54 +1,48 @@
 .main-heading {
-    color: $main-colour;
-    font-size: 4rem;
-    font-family: $main-font;
-    font-weight: 300;
+  color: $main-colour;
+  font-size: 4rem;
+  font-family: $main-font;
+  font-weight: 300;
 
-    // margin: 0;
-
-
+  // margin: 0;
 }
 
 .main-text {
-    color: $secondary-colour;
-    font-family: $secondary-font;
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
+  color: $secondary-colour;
+  font-family: $secondary-font;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .showcase-card--title {
-    color: $main-colour;
-    font-family: $secondary-font;
-    font-size: 1.3rem;
-    font-weight: bold;
-    max-width: 100%;
-
+  color: $main-colour;
+  font-family: $secondary-font;
+  font-size: 1.3rem;
+  font-weight: bold;
+  max-width: 100%;
 }
 
 .recipe-heading {
-    color: $dark-grey;
-    font-family: $secondary-font;
-    font-weight: 600;
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
+  color: $dark-grey;
+  font-family: $secondary-font;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 .recipe-text {
-    color: $dark-grey;
-    font-family: $main-font;
-    font-weight: 400;
-
+  color: $dark-grey;
+  font-family: $main-font;
+  font-weight: 400;
 }
 
 .blog-post--title {
-    font-size: 2.5rem;
-    
+  font-size: 2.5rem;
 }
 
 .blog-post--post {
-    color: $dark-grey;
-    font-family: $main-font;
-    font-weight: 400;
-    margin-top: 1rem;
-
+  color: $dark-grey;
+  font-family: $main-font;
+  font-weight: 400;
+  margin-top: 1rem;
 }

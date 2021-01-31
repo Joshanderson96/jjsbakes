@@ -1,18 +1,18 @@
 html,
 body {
-    max-width: 100%;
+  max-width: 100%;
 
-    background-color: #fdfdfd;
-    opacity: 1;
-    background-image: radial-gradient(#FFCBEF 2px, transparent 2px), radial-gradient(#FFCBEF 2px, #fdfdfd 2px);
-    background-size: 80px 80px;
-    background-position: 0 0, 40px 40px;
-
+  background-color: #fdfdfd;
+  opacity: 1;
+  background-image: radial-gradient(#ffcbef 2px, transparent 2px),
+    radial-gradient(#ffcbef 2px, #fdfdfd 2px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
 }
 
 .container {
-    max-width: 960px;
-    margin: 0 auto;
-    margin-bottom: 3rem;
-    background-color: white;
+  max-width: 960px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  // background-color: white;
 }
