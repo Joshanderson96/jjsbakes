@@ -1,18 +1,17 @@
 // Colours
 
-$main-colour: #FF7ED8;
-$lighter-main: #FFCBEF;
-$secondary-colour: #9D9D9D;
+$main-colour: #fa8ebe;
+$lighter-main: #fdddeb;
+
+// $main-colour: #56c2b6;
+// $lighter-main: #ffcbef;
+// $lighter-main: #abe1da;
+$secondary-colour: #9d9d9d;
 $very-light-grey: #f0f0f0;
 $dark-grey: #444444;
 
-$main-font: 'Montserrat Alternates',
-sans-serif;
-$secondary-font: 'M PLUS Rounded 1c',
-sans-serif;
-;
-
-
+$main-font: "Montserrat Alternates", sans-serif;
+$secondary-font: "M PLUS Rounded 1c", sans-serif;
 $max-width: 960px;
 $full-width: 100%;
 
@@ -21,7 +20,10 @@ $page-margin: 7rem;
 $border-radius: 5px;
 
 @mixin subtle-shadow {
-    -webkit-box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
-    -moz-box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
-    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+  -webkit-box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
 }

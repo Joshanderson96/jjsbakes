@@ -5,7 +5,6 @@ body {
   max-width: 100%;
   background-color: #fdfdfd;
   opacity: 1;
-  background-image: radial-gradient(#ffcbef 2px, transparent 2px), radial-gradient(#ffcbef 2px, #fdfdfd 2px);
   background-size: 80px 80px;
   background-position: 0 0, 40px 40px;
 }
@@ -678,31 +677,32 @@ textarea {
 }
 
 .navbar-logo {
-  background-color: #FF7ED8;
+  background-color: #fa8ebe;
   border-radius: 50%;
-  border-color: #FF7ED8;
+  border-color: #fa8ebe;
 }
 
 .navbar-logo--image {
-  max-width: 5rem;
+  max-width: 4rem;
+  margin-left: 1rem;
 }
 
 .main-heading {
-  color: #FF7ED8;
+  color: #fa8ebe;
   font-size: 4rem;
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 300;
 }
 
 .main-text {
-  color: #9D9D9D;
+  color: #9d9d9d;
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-size: 1.5rem;
   margin-top: 1.5rem;
 }
 
 .showcase-card--title {
-  color: #FF7ED8;
+  color: #fa8ebe;
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-size: 1.3rem;
   font-weight: bold;
@@ -736,26 +736,26 @@ textarea {
 
 .login_button {
   padding: 1rem 1rem;
-  width: 10rem;
+  min-width: 10rem;
   font-weight: 500;
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
 }
 
 .login_button--login {
-  background-color: #FFCBEF;
-  color: #FF7ED8;
+  background-color: #fdddeb;
+  color: #fa8ebe;
   font-family: "Montserrat Alternates", sans-serif;
   border-radius: 5px 0 0 5px;
   border: 0;
 }
 
 .login_button--login:hover {
-  background-color: #ffc5ed;
+  background-color: #fdd8e8;
 }
 
 .login_button--register {
   background-color: #f0f0f0;
-  color: #FF7ED8;
+  color: #fa8ebe;
   font-family: "Montserrat Alternates", sans-serif;
   border-radius: 0 5px 5px 0;
   border: 0;
@@ -763,6 +763,18 @@ textarea {
 
 .login_button--register:hover {
   background-color: #ededed;
+}
+
+.login_button--profile {
+  background-color: #fdddeb;
+  color: #fa8ebe;
+  font-family: "Montserrat Alternates", sans-serif;
+  border-radius: 5px;
+  border: 0;
+}
+
+.login_button--profile:hover {
+  background-color: #fdd8e8;
 }
 
 .auth-form-container {
@@ -787,13 +799,13 @@ textarea {
   width: 100%;
   height: 3rem;
   border: none;
-  background-color: #ffeffa;
+  background-color: #feebf4;
   border-radius: 5px;
   margin-bottom: 1.5rem;
 }
 
 .auth-form__input:focus {
-  border: solid 1px #FF7ED8;
+  border: solid 1px #fa8ebe;
 }
 
 .auth-form__button {
@@ -802,7 +814,7 @@ textarea {
   appearance: none;
   width: 100%;
   text-align: center;
-  background-color: #FF7ED8;
+  background-color: #1fd119;
   font-family: "M PLUS Rounded 1c", sans-serif;
   color: white;
   font-size: 2rem;
@@ -819,13 +831,13 @@ textarea {
 }
 
 .auth-form:hover {
-  background-color: #ff74d5;
+  background-color: #fa84b8;
   color: #f7f7f7;
 }
 
 .navbar {
   display: flex;
-  background-color: #FF7ED8;
+  background-color: #fa8ebe;
   height: 80px;
   min-width: 100%;
   align-items: center;
@@ -852,7 +864,7 @@ textarea {
 .navbar-options-text {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 300;
-  color: #FFCBEF;
+  color: #fdddeb;
   padding-left: 1rem;
 }
 
@@ -927,8 +939,8 @@ textarea {
 }
 
 .showcase-card:hover {
-  -webkit-text-decoration: underline #FF7ED8 2px;
-          text-decoration: underline #FF7ED8 2px;
+  -webkit-text-decoration: underline #fa8ebe 2px;
+          text-decoration: underline #fa8ebe 2px;
 }
 
 .showcase-card-image {
@@ -968,7 +980,7 @@ textarea {
 }
 
 .showcase-card-image--view:hover {
-  background: rgba(255, 126, 216, 0.5);
+  background: rgba(250, 142, 190, 0.5);
   transition: 0.2s;
 }
 
@@ -1038,7 +1050,7 @@ textarea {
 
 .content-cards__title {
   width: 100%;
-  color: #FF7ED8;
+  color: #fa8ebe;
   padding-bottom: 1rem;
   border-bottom: 1px solid #f0f0f0;
   font-weight: 500;
@@ -1046,7 +1058,7 @@ textarea {
 
 .content-cards__prep {
   width: 100%;
-  color: #9D9D9D;
+  color: #9d9d9d;
   font-weight: 300;
   padding-bottom: 1rem;
   border-bottom: 1px solid #f0f0f0;
@@ -1055,7 +1067,7 @@ textarea {
 }
 
 .content-cards__creator {
-  color: #9D9D9D;
+  color: #9d9d9d;
   font-weight: 300;
   display: flex;
   justify-content: space-between;
@@ -1063,15 +1075,15 @@ textarea {
 
 .content-cards--svg {
   max-width: 1.5rem;
-  fill: #9D9D9D;
+  fill: #9d9d9d;
 }
 
 .cards-highlight {
-  color: #FF7ED8;
+  color: #fa8ebe;
 }
 
 .content-cards__view {
-  background-color: #FF7ED8;
+  background-color: #fa8ebe;
   color: white;
   border-radius: 0 0 5px 5px;
   height: 7rem;
@@ -1086,7 +1098,7 @@ textarea {
 }
 
 .content-cards__view:hover {
-  background-color: #ff8ddd;
+  background-color: #fb9dc6;
   color: #f7f7f7;
 }
 
@@ -1099,7 +1111,7 @@ textarea {
 .create-form__title {
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-size: 1.5rem;
-  color: #FF7ED8;
+  color: #fa8ebe;
   margin-bottom: 0.75rem;
   margin-top: 3rem;
   width: 100%;
@@ -1109,13 +1121,13 @@ textarea {
 .create-form__input {
   -webkit-appearance: none;
   border: none;
-  border-bottom: 0.2rem solid #9D9D9D;
+  border-bottom: 0.2rem solid #9d9d9d;
   border-radius: 0.3rem 0.3rem 0.1rem 0.1rem;
   width: 100%;
 }
 
 .create-form__input:focus {
-  border-bottom: #FF7ED8 0.2rem solid;
+  border-bottom: #fa8ebe 0.2rem solid;
 }
 
 .create-form__select {
@@ -1123,17 +1135,17 @@ textarea {
   -moz-appearance: none;
   appearance: none;
   border: none;
-  border-bottom: 0.2rem solid #9D9D9D;
+  border-bottom: 0.2rem solid #9d9d9d;
   border-radius: 0.3rem 0.3rem 0.1rem 0.1rem;
   background-repeat: no-repeat;
   background-color: #f0f0f0;
   text-align: center;
   font-size: 2rem;
-  color: #FF7ED8;
+  color: #fa8ebe;
 }
 
 .create-form__select:focus {
-  border-bottom: #FF7ED8 0.2rem solid;
+  border-bottom: #fa8ebe 0.2rem solid;
 }
 
 .create-form__button {
@@ -1144,10 +1156,10 @@ textarea {
   height: 3.5rem;
   padding: 1em 2em;
   border: none;
-  background: rgba(255, 126, 216, 0.1);
-  color: #9D9D9D;
+  background: rgba(250, 142, 190, 0.1);
+  color: #9d9d9d;
   border-radius: 0.3rem 0.3rem 0.1rem 0.1rem;
-  border-bottom: #9D9D9D solid;
+  border-bottom: #9d9d9d solid;
   position: relative;
   z-index: 1;
   display: flex;
@@ -1165,16 +1177,16 @@ textarea {
   height: 3.5rem;
   border: none;
   background: #f0f0f0;
-  color: #9D9D9D;
+  color: #9d9d9d;
   border-radius: 0.3rem 0.3rem 0.1rem 0.1rem;
-  border-bottom: #9D9D9D solid;
+  border-bottom: #9d9d9d solid;
   position: relative;
   z-index: 1;
   display: flex;
 }
 
 .create-form__button:hover {
-  border-bottom: #FF7ED8 solid;
+  border-bottom: #fa8ebe solid;
 }
 
 .create-form__time-container {
@@ -1186,7 +1198,7 @@ textarea {
   -moz-appearance: textfield;
   margin: 0;
   border: none;
-  border-bottom: 0.2rem solid #9D9D9D;
+  border-bottom: 0.2rem solid #9d9d9d;
   border-radius: 0.3rem 0.3rem 0.1rem 0.1rem;
   width: 4rem;
   background: #f0f0f0;
@@ -1195,7 +1207,7 @@ textarea {
 }
 
 .create-form__time:focus {
-  border-bottom: #FF7ED8 0.2rem solid;
+  border-bottom: #fa8ebe 0.2rem solid;
 }
 
 .create-form__time-text {
@@ -1209,7 +1221,7 @@ textarea {
   appearance: none;
   width: 100%;
   text-align: center;
-  background-color: #FF7ED8;
+  background-color: #fa8ebe;
   font-family: "M PLUS Rounded 1c", sans-serif;
   color: white;
   font-size: 2rem;
@@ -1220,12 +1232,12 @@ textarea {
 }
 
 .create-form__post:hover {
-  background-color: #ff8ddd;
+  background-color: #fb9dc6;
   color: #f7f7f7;
 }
 
 .page-title {
-  background-color: #FFCBEF;
+  background-color: #fdddeb;
   height: 80px;
   padding: 0;
 }
@@ -1259,7 +1271,7 @@ textarea {
 }
 
 .recipe-container--inner {
-  background-color: #FFCBEF;
+  background-color: #fdddeb;
   padding: 1rem;
   border-radius: 5px;
 }
@@ -1291,7 +1303,7 @@ textarea {
 }
 
 .blog-info--text {
-  color: #FF7ED8;
+  color: #fa8ebe;
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-size: 2rem;
 }

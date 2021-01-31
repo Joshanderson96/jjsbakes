@@ -1,15 +1,13 @@
 .navbar-logo {
-    // display: flex;
-    // justify-content: center;
-    // display: block;
-    background-color: $main-colour;
-    border-radius: 50%;
-    border-color: $main-colour;
+  // display: flex;
+  // justify-content: center;
+  // display: block;
+  background-color: $main-colour;
+  border-radius: 50%;
+  border-color: $main-colour;
 
-
-
-    &--image {
-        max-width: 5rem;
-        // margin-right: 1rem;
-    }
+  &--image {
+    max-width: 4rem;
+    margin-left: 1rem;
+  }
 }

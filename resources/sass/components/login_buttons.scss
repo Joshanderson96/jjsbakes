@@ -1,31 +1,43 @@
 .login_button {
-    padding: 1rem 1rem;
-    width: 10rem;
-    font-weight: 500;
+  padding: 1rem 1rem;
+  min-width: 10rem;
+  font-weight: 500;
 
-    @include subtle-shadow;
+  @include subtle-shadow;
 
-    &--login {
-        background-color: $lighter-main;
-        color: $main-colour;
-        font-family: $main-font;
-        border-radius: $border-radius 0 0 $border-radius;
-        border: 0;
+  &--login {
+    background-color: $lighter-main;
+    color: $main-colour;
+    font-family: $main-font;
+    border-radius: $border-radius 0 0 $border-radius;
+    border: 0;
 
-        &:hover {
-            background-color: darken($lighter-main, $amount: 1.1);
-        }
+    &:hover {
+      background-color: darken($lighter-main, $amount: 1.1);
     }
+  }
 
-    &--register {
-        background-color: $very-light-grey;
-        color: $main-colour;
-        font-family: $main-font;
-        border-radius: 0 $border-radius $border-radius 0;
-        border: 0;
+  &--register {
+    background-color: $very-light-grey;
+    color: $main-colour;
+    font-family: $main-font;
+    border-radius: 0 $border-radius $border-radius 0;
+    border: 0;
 
-        &:hover {
-            background-color: darken($very-light-grey, $amount: 1.1);
-        }
+    &:hover {
+      background-color: darken($very-light-grey, $amount: 1.1);
     }
+  }
+
+  &--profile {
+    background-color: $lighter-main;
+    color: $main-colour;
+    font-family: $main-font;
+    border-radius: $border-radius;
+    border: 0;
+
+    &:hover {
+      background-color: darken($lighter-main, $amount: 1.1);
+    }
+  }
 }
