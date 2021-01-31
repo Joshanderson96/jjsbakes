@@ -1,0 +1,73 @@
+.blogs-list {
+  width: 960px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px $lighter-main solid;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: $border-radius;
+  padding: 0.5rem;
+
+  //   @include subtle-shadow;
+
+  &-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    // height: 10rem;
+
+    &__title {
+      width: 68%;
+      &--text {
+        font-family: $secondary-font;
+        font-size: 2rem;
+        text-align: start;
+        padding: 1rem 1rem;
+        color: $main-colour;
+        border-right: 1px solid $very-light-grey;
+        border-left: 1px solid $very-light-grey;
+      }
+    }
+
+    &__image {
+      width: 5rem;
+      height: 5rem;
+      //   border-radius: 100px;
+      overflow: hidden;
+    }
+
+    &__button {
+      height: 3rem;
+      font-family: $secondary-font;
+      width: 5rem;
+      font-weight: bold;
+
+      &--edit {
+        background-color: $main-colour;
+        color: white;
+        border: none;
+        border-radius: $border-radius;
+      }
+
+      &--delete {
+        background-color: $lighter-main;
+        color: $dark-grey;
+        border: none;
+        border-radius: $border-radius;
+
+        &:hover {
+          background-color: #e60000;
+          color: white;
+        }
+      }
+    }
+  }
+
+  &__image {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+  }
+}

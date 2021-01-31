@@ -3,7 +3,7 @@
   min-width: 10rem;
   font-weight: 500;
 
-  @include subtle-shadow;
+  // @include subtle-shadow;
 
   &--login {
     background-color: $lighter-main;
@@ -31,7 +31,7 @@
 
   &--profile {
     background-color: $lighter-main;
-    color: $main-colour;
+    color: $dark-grey;
     font-family: $main-font;
     border-radius: $border-radius;
     border: 0;
