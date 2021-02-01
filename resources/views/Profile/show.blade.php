@@ -15,12 +15,18 @@
                         </div>
                             
                         <div class="blogs-list-card__title">
-                            <p class="blogs-list-card__title--text">{{ $data->title}} </p>
+                            <a href="/blogs/{{ $data->id }}"><p class="blogs-list-card__title--text">{{ $data->title}} </p></a>
                         </div>
 
                         <div class="blogs-list-card__buttons">
                             <button class="blogs-list-card__button blogs-list-card__button--edit">Edit</button>
+
+                            <form action="/blogs/{{ $data->id }}" method="post">
+                                @csrf
+                                @method('DELETE')
                             <button class="blogs-list-card__button blogs-list-card__button--delete">Delete</button>
+                            </form>
+                            
 
                         </div>
                     </div>
@@ -28,8 +34,9 @@
             @endforeach
                 
             @else
-                @foreach ($blog as $data)
             <div class="content-container__cards"> 
+                @foreach ($blog as $data)
+            
                 <div class="content-cards">
                     <div class="content-cards__image">
                         <img class="cards__image" src="{{ url('image/'.$data->image)}}" alt="" />
@@ -53,11 +60,13 @@
                         <p class="cards-view">View</p>
                     </div></a>
             </div>
+        
         @endforeach
+    </div>
             @endif
         
             
-        </div>
+        
     </div>
     
 @endsection

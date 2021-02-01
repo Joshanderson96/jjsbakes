@@ -1079,6 +1079,15 @@ textarea {
 
 .cards-highlight {
   color: #fa8ebe;
+  text-decoration: none;
+}
+
+.cards-highlight--link {
+  text-decoration: none;
+}
+
+.cards-highlight--link:hover {
+  color: #fdddeb;
 }
 
 .content-cards__view {
@@ -1338,12 +1347,17 @@ textarea {
   color: #fa8ebe;
   border-right: 1px solid #f0f0f0;
   border-left: 1px solid #f0f0f0;
+  text-decoration: none;
 }
 
 .blogs-list-card__image {
   width: 5rem;
   height: 5rem;
   overflow: hidden;
+}
+
+.blogs-list-card__buttons {
+  display: flex;
 }
 
 .blogs-list-card__button {
@@ -1358,6 +1372,7 @@ textarea {
   color: white;
   border: none;
   border-radius: 5px;
+  margin-right: 0.5rem;
 }
 
 .blogs-list-card__button--delete {

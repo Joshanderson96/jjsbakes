@@ -28,6 +28,7 @@
         color: $main-colour;
         border-right: 1px solid $very-light-grey;
         border-left: 1px solid $very-light-grey;
+        text-decoration: none;
       }
     }
 
@@ -38,17 +39,24 @@
       overflow: hidden;
     }
 
+    &__buttons {
+      display: flex;
+      
+    }
+
     &__button {
       height: 3rem;
       font-family: $secondary-font;
       width: 5rem;
       font-weight: bold;
+      
 
       &--edit {
         background-color: $main-colour;
         color: white;
         border: none;
         border-radius: $border-radius;
+        margin-right: 0.5rem;
       }
 
       &--delete {

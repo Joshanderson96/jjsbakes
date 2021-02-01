@@ -120,6 +120,19 @@
 
 .cards-highlight {
     color: $main-colour;
+    text-decoration: none;
+
+    
+
+    &--link {
+        text-decoration: none;
+        
+        &:hover {
+            color: $lighter-main;
+        }
+    }
+
+    
 }
 
 .content-cards__view {
