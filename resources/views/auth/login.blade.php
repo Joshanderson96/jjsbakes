@@ -8,7 +8,7 @@
     <form action="{{ route('login') }}" class="auth-form-container" method="post">
         @csrf
         <div class="auth-form__heading">
-            <h1 class="main-heading auth-form__heading--text" >Login</h1>
+            <h1 class="main-heading auth-form__heading--text" >Welcome!</h1>
         </div>
         
         
@@ -36,7 +36,7 @@
         
             
         {{-- <input type="submit" class="create-form__post" value="Register"> --}}
-        <button type="submit" class="auth-form__button">Login</button>
+        <button type="submit" class="auth-form__button"><span class="auth-form__button--text">Login</span></button>
 
     </form>
 

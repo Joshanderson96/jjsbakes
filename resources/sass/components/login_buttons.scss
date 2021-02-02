@@ -6,38 +6,38 @@
   // @include subtle-shadow;
 
   &--login {
-    background-color: $lighter-main;
-    color: $main-colour;
+    background-color: $secondary-colour;
+    color: black;
     font-family: $main-font;
     border-radius: $border-radius 0 0 $border-radius;
     border: 0;
 
     &:hover {
-      background-color: darken($lighter-main, $amount: 1.1);
+      background-color: darken($secondary-colour, $amount: 3);
     }
   }
 
   &--register {
-    background-color: $very-light-grey;
+    background-color: $lighter-main;
     color: $main-colour;
     font-family: $main-font;
     border-radius: 0 $border-radius $border-radius 0;
     border: 0;
 
     &:hover {
-      background-color: darken($very-light-grey, $amount: 1.1);
+      background-color: darken($lighter-main, $amount: 1.3);
     }
   }
 
   &--profile {
-    background-color: $lighter-main;
+    background-color: $secondary-colour;
     color: $dark-grey;
     font-family: $main-font;
     border-radius: $border-radius;
     border: 0;
 
     &:hover {
-      background-color: darken($lighter-main, $amount: 1.1);
+      background-color: darken($secondary-colour, $amount: 3);
     }
   }
 }

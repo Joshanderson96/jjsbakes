@@ -40,9 +40,9 @@
     width: 100%;
     text-align: center;
     // background-color: $main-colour;
-    background-color: #1fd119;
+    background-color: $secondary-colour;
     font-family: $secondary-font;
-    color: white;
+    color: black;
     font-size: 2rem;
     border: 0;
     border-radius: $border-radius;
@@ -50,6 +50,16 @@
     height: 3rem;
     // margin: 0.75rem 0;
     // margin-top: 3rem;
+
+    &--text {
+      opacity: 0.43;
+    }
+
+    &:hover {
+      background-color: darken($secondary-colour, $amount: 3);
+      @include subtle-shadow;
+      
+    }
   }
 
   &__heading {

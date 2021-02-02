@@ -90,7 +90,7 @@
 
 .content-cards__prep {
     width: 100%;
-    color: $secondary-colour;
+    color: $grey;
     font-weight: 300;
     padding-bottom: 1rem;
     border-bottom: 1px solid $very-light-grey;
@@ -101,7 +101,7 @@
 
 .content-cards__creator {
     // width: 100%;
-    color: $secondary-colour;
+    color: $grey;
     font-weight: 300;
     display: flex;
     justify-content: space-between;
@@ -111,7 +111,7 @@
 
 .content-cards--svg {
     max-width: 1.5rem;
-    fill: $secondary-colour;
+    fill: $grey;
     // margin-left: 1rem;
 
 }
