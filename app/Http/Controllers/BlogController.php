@@ -96,9 +96,10 @@ class BlogController extends Controller
      * @param  \App\Models\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function edit(Blog $blog)
+    public function edit($id)
     {
-        
+        $blog = Blog::find($id);
+        return view('pages.edit', compact('blog'));
     }
 
     /**
@@ -110,7 +111,33 @@ class BlogController extends Controller
      */
     public function update(Request $request, Blog $blog)
     {
-        //
+        $validateData = $request->validate([
+            'title' => 'required',
+            'user_id' => 'reqired',
+            'hours' => 'required',
+            'category' => 'required',
+            'minutes' => 'required',
+            'recipe' => 'required',
+            'post' => 'required',
+            'image' => 'required|image|mimes:jpg,png,jpeg',
+    
+           ]);
+
+           $imageName = date('YmdHis') .'.'. $request->image->getClientOriginalExtension();
+           $request->image->move(public_path('image'), $imageName);
+           $validateData['image'] = $imageName;
+    
+        //    $imageName = time().'.'.$request->image->hashName();
+        //    $request->image->move(public_path('storage/images'), $imageName);
+    
+        //    $validateData['user_id'] = Auth::user()->id;
+        $blog->update($request->all());
+           
+           Blog::create($validateData);
+           
+           
+    
+           return redirect('blogs');
     }
 
     /**
@@ -123,6 +150,6 @@ class BlogController extends Controller
     {
         Blog::find($id)->delete();
 
-        return redirect()->back();;
+        return redirect()->back();
     }
 }

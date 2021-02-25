@@ -19,7 +19,7 @@
                         </div>
 
                         <div class="blogs-list-card__buttons">
-                            <button class="blogs-list-card__button blogs-list-card__button--edit">Edit</button>
+                            <a href="/blogs/{{ $data-> id}}/edit"><button class="blogs-list-card__button blogs-list-card__button--edit">Edit</button></a>
 
                             <form action="/blogs/{{ $data->id }}" method="post">
                                 @csrf

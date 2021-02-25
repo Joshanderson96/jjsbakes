@@ -676,6 +676,10 @@ textarea {
   all: unset;
 }
 
+a {
+  text-decoration: none;
+}
+
 .navbar-logo {
   background-color: #fa8ebe;
   border-radius: 50%;
