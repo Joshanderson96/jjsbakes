@@ -16,7 +16,7 @@
 
 
 
-        <form action="{{ url('blogs/edit') }}" class="create-form" method="post" enctype="multipart/form-data">
+        <form action="{{ route('blogs.update', $blog->id) }}" class="create-form" method="post" enctype="multipart/form-data">
             @csrf
             @method('PUT')
             <div class="blogHeading">

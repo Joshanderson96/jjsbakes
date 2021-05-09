@@ -127,17 +127,12 @@ class BlogController extends Controller
            $request->image->move(public_path('image'), $imageName);
            $validateData['image'] = $imageName;
     
-        //    $imageName = time().'.'.$request->image->hashName();
-        //    $request->image->move(public_path('storage/images'), $imageName);
+           $validateData['user_id'] = Auth::user()->id;
+           
+           $blog->update($validateData);
+
     
-        //    $validateData['user_id'] = Auth::user()->id;
-        $blog->update($request->all());
-           
-           Blog::create($validateData);
-           
-           
-    
-           return redirect('blogs');
+           return view('pages.home');
     }
 
     /**
