@@ -38,7 +38,7 @@
         <input name="password_confirmation" type="password" id="password" class="auth-form__input @error('password_confirmation') is-invaild @enderror " value="{{ old('password_confirmation') }}" placeholder="Confirm Password">
         @error('password_confirmation')
             <span class="invaild-feedback">
-                <p>Passwrod does not match</p>
+                <p>Password does not match</p>
             </span>
         @enderror
         </div>
@@ -50,7 +50,7 @@
         
             
         {{-- <input type="submit" class="auth-form__post" value="Register"> --}}
-        <button type="submit" class="auth-form__button">Register</button>
+        <button type="submit" class="auth-form__button"><span class="opacity-text">Register</span></button>
 
     </form>
 

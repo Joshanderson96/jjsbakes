@@ -111,14 +111,14 @@
         @if  (Route::has('login'))
             <div class="auth">
                 @auth 
-					<a class="login_button" href="/user/{{ Auth::user()->id }}"><button class="login_button login_button--profile">{{ Auth::user()->name }}</button></a>
+					<a class="login_button" href="/user/{{ Auth::user()->id }}"><button class="login_button login_button--profile"><span class="opacity-text"></span>{{ Auth::user()->name }}</button></a>
                     <a class="navbar-options__link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
 
                     <form id="logout-form" action="{{ route('logout')}} " method="post" style="display: none">
                         @csrf
                     </form>
                 @else
-                    <a href="{{ route('login') }}"><button class="login_button login_button--login" href="{{ route('login') }} "><span class="auth-form__button--text">Login</span></button></a><!--
+                    <a href="{{ route('login') }}"><button class="login_button login_button--login" href="{{ route('login') }} "><span class="opacity-text">Login</span></button></a><!--
 
                     @if (Route::has('register'))
                     --><a href="{{ route('register') }}"><button class="login_button login_button--register" >Register</button></a> 

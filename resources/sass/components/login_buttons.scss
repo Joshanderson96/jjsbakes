@@ -35,6 +35,10 @@
     font-family: $main-font;
     border-radius: $border-radius;
     border: 0;
+    
+    &-text {
+      opacity: 0.43;
+    }
 
     &:hover {
       background-color: darken($secondary-colour, $amount: 3);
