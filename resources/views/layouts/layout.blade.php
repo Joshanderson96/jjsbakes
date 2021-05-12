@@ -9,7 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
         
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <script src="{{ mix('js/app.js') }}"></script>
+        
 
         <script src="https://cdn.tiny.cloud/1/wk1aw2t7b9l8anlqpvev4u665xx77x8ishqqjl4s76vfscww/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
         
@@ -35,6 +35,6 @@
             @yield('content')
         </div>
             
-        
+        <script src="{{ mix('js/app.js') }}"></script>
     </body>
 </html>
