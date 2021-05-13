@@ -1854,7 +1854,6 @@ var contents = document.querySelectorAll(".userForm-content");
 
 tabs.onclick = function (e) {
   var id = e.target.dataset.id;
-  console.log(id);
 
   if (id) {
     tabButton.forEach(function (btn) {
@@ -1866,6 +1865,16 @@ tabs.onclick = function (e) {
     });
     var element = document.getElementById(id);
     element.classList.add("userForm-content-active");
+  }
+};
+
+window.showHide = function () {
+  var modal = document.getElementsByClassName('userForm-container');
+
+  if (modal.classList.contains('hide')) {
+    modal.classList.remove('show');
+  } else {
+    modal.classList.add('hide');
   }
 };
 

@@ -78,31 +78,10 @@
 .userForm{
 
 	&-container {
-		// position: absolute;
-		// margin: auto;
-		// width: 24rem;
-		// padding
 
-
-		
-		// border-radius: $border-radius;
-		// display: flex;
-		// flex-direction: column;
-		
-		// background-color: white;
-		// //   min-height: 20rem;
-		// left: 50%;
-		// top: 50%;
-		// transform: translate(-50%, -50%);
-		
-
-		// @include subtle-shadow;
 		position: absolute;
 		margin: auto;
-		width: 20%;
-		display: flex;
-		justify-content: center;
-	  
+		width: 20%;	  
 		min-width: 28rem;
 		border-radius: $border-radius;
 		display: flex;
@@ -114,6 +93,7 @@
 		top: 50%;
 		transform: translate(-50%, -50%);
 		cursor: pointer;
+		z-index: 999;
 
 		@include subtle-shadow;
 

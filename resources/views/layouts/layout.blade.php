@@ -29,10 +29,13 @@
     </head>
 
     <body>
+        
+        @include('auth.register')
         @include('partials.navbar')
-
         <div class="container">
+            
             @yield('content')
+            
         </div>
             
         <script src="{{ mix('js/app.js') }}"></script>

@@ -9,8 +9,6 @@ const contents = document.querySelectorAll(".userForm-content");
 
 tabs.onclick = e => {
   const id = e.target.dataset.id;
-
-  console.log(id);
   if (id) {
     tabButton.forEach(btn => {
       btn.classList.remove("userForm-tabs--active");
@@ -22,6 +20,19 @@ tabs.onclick = e => {
     });
     const element = document.getElementById(id);
     element.classList.add("userForm-content-active");
+  }
+}
+
+
+
+
+
+window.showHide = function () {
+  let modal = document.getElementsByClassName('userForm-container');
+  if (modal.classList.contains('hide')) {
+    modal.classList.remove('show')
+  } else {
+    modal.classList.add('hide')
   }
 }
 

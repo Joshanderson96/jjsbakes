@@ -1,14 +1,5 @@
-@extends('layouts.layout')
 
-@section('content')
-
-    
-    @section('pageName', 'Login/Register')
-
-
-
-
-        <div class="userForm-container">
+        <div class="userForm-container hide" id="formDiv">
           <div class="userForm-tabs-header">
             <div class="userForm-tabs userForm-tabs--left  userForm-tabs--active " data-id="login">Login</div>
             <div class="userForm-tabs userForm-tabs--right" data-id="register">Register</div>
@@ -96,27 +87,3 @@
             </div>
           </div>
         </div>
-      
-
-
-{{-- <div class="userForm-tabs-header">
-            <div     data-id="login" class="userForm-tabs userForm-tabs--active userForm-tabs--left">
-                <h3 class="userForm-tabs_text">Login</h3>
-            </div>
-
-            <div data-id="register" class="userForm-tabs  userForm-tabs--right">
-                <h3 class="userForm-tabs_text">Register</h3>
-            </div>
-        </div>
-
-        <div class="userForm-form-container">
-            <div class="userForm-content userForm-content--active" id="loginForm">
-                <p>Login</p>
-            </div>
-
-            <div class="userForm-content" id="registerForm">
-                <p>Register</p>
-            </div>
-        </div>
-     --}}
-@endsection

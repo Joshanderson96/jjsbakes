@@ -16,3 +16,11 @@ body {
   margin-bottom: 3rem;
   // background-color: white;
 }
+
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none !important;
+}

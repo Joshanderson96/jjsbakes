@@ -118,7 +118,7 @@
                         @csrf
                     </form>
                 @else
-                    <a href="{{ route('login') }}"><button class="login_button login_button--login" href="{{ route('login') }} "><span class="opacity-text">Login</span></button></a><!--
+                    <a onclick="showHide()"><button class="login_button login_button--login" href="{{ route('login') }} "><span class="opacity-text">Login</span></button></a><!--
 
                     @if (Route::has('register'))
                     --><a href="{{ route('register') }}"><button class="login_button login_button--register" >Register</button></a> 
