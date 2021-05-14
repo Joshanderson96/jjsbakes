@@ -1869,12 +1869,15 @@ tabs.onclick = function (e) {
 };
 
 window.showHide = function () {
-  var modal = document.getElementsByClassName('userForm-container');
+  var modal = document.querySelector('.userForm-container');
+  var modalBackground = document.querySelector('.userForm');
 
-  if (modal.classList.contains('hide')) {
-    modal.classList.remove('show');
+  if (modal.classList.contains('hide') && modalBackground.classList.contains('hide')) {
+    modal.classList.remove('hide');
+    modalBackground.classList.remove('hide');
   } else {
     modal.classList.add('hide');
+    modalBackground.classList.add('hide');
   }
 };
 

@@ -1,5 +1,6 @@
-
-        <div class="userForm-container hide" id="formDiv">
+<section class="userForm hide" onclick='showHide()' >
+</section>
+<div class="userForm-container hide" id="formDiv">
           <div class="userForm-tabs-header">
             <div class="userForm-tabs userForm-tabs--left  userForm-tabs--active " data-id="login">Login</div>
             <div class="userForm-tabs userForm-tabs--right" data-id="register">Register</div>
@@ -87,3 +88,5 @@
             </div>
           </div>
         </div>
+
+        

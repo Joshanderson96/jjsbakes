@@ -75,8 +75,19 @@
   }
 }
 
-.userForm{
 
+
+.userForm{
+	content: "";
+	display: block;
+	position: fixed; /* could also be absolute */ 
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	background-color: rgba(255,192,203 ,0.3 );
+	
 	&-container {
 
 		position: absolute;
@@ -93,9 +104,11 @@
 		top: 50%;
 		transform: translate(-50%, -50%);
 		cursor: pointer;
-		z-index: 999;
+		z-index: 1100;
 
 		@include subtle-shadow;
+
+		
 
 	}
 
