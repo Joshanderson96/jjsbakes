@@ -1,17 +1,21 @@
 .content-container {
     max-width: $max-width;
-
     margin: auto;
     margin-bottom: 7rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
 
 
     .content-container__cards {
 
         // border: black 1px solid;
-
         display: grid;
-        gap: 2rem 3.75rem;
+        gap: 2rem 1.5rem;
         grid-template-columns: repeat(3, 1fr);
 
     }
@@ -21,21 +25,64 @@
 }
 
 .content-title {
-    margin-bottom: 3rem;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+
+    max-width: $max-width;
+    background-color: $very-light-grey;
+    height: 4rem;
+    width: 100%;
+    margin: 2rem 0 1rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: $border-radius;
+    padding: 0px 1rem;
+    
+    
+    &--text {
+        font-family: $main-font;
+        color: $main-colour;
+        font-size: 2rem;
+    }
+
+    &-create {
+        position: relative;
+        right: 0;
+
+        &--button {
+            height: 3rem;
+            width: 6rem;
+        }
+        
+    }
+}
+
+
+.content-filter {
+    height: 620px;
+    min-width: 11rem;
+    margin-right: 1rem;
+    border-radius: $border-radius;
+    background-color: $very-light-grey;
 }
 
 .content-cards {
-    max-width: 17.5rem;
-    min-width: 17.5rem;
+    max-width: 15rem;
+    min-width: 15rem;
     // border: 1px solid $main-colour;
     margin-bottom: 1.5rem;
     border-radius: 5px;
-    height: 393px;
+    height: 21.5rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
     background-color: #ffffff;
+    
 
 
 

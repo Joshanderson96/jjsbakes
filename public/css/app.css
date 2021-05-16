@@ -738,18 +738,6 @@ a {
   background-color: #7ff9c3;
 }
 
-.login_button--register {
-  background-color: #fdddeb;
-  color: #fa8ebe;
-  font-family: "Montserrat Alternates", sans-serif;
-  border-radius: 0 5px 5px 0;
-  border: 0;
-}
-
-.login_button--register:hover {
-  background-color: #fdd7e7;
-}
-
 .login_button--profile {
   background-color: #8efaca;
   color: #444444;
@@ -781,7 +769,7 @@ a {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .auth-form__input {
@@ -862,7 +850,7 @@ a {
   transform: translate(-50%, -50%);
   cursor: pointer;
   z-index: 1100;
-  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .userForm-tabs-header {
@@ -1074,31 +1062,75 @@ a {
   max-width: 960px;
   margin: auto;
   margin-bottom: 7rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* Safari/Chrome, other WebKit */
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
 }
 
 .content-container .content-container__cards {
   display: grid;
-  gap: 2rem 3.75rem;
+  gap: 2rem 1.5rem;
   grid-template-columns: repeat(3, 1fr);
 }
 
 .content-title {
-  margin-bottom: 3rem;
+  /* Safari/Chrome, other WebKit */
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  max-width: 960px;
+  background-color: #f0f0f0;
+  height: 4rem;
+  width: 100%;
+  margin: 2rem 0 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 0px 1rem;
+}
+
+.content-title--text {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #fa8ebe;
+  font-size: 2rem;
+}
+
+.content-title-create {
+  position: relative;
+  right: 0;
+}
+
+.content-title-create--button {
+  height: 3rem;
+  width: 6rem;
+}
+
+.content-filter {
+  height: 620px;
+  min-width: 11rem;
+  margin-right: 1rem;
+  border-radius: 5px;
+  background-color: #f0f0f0;
 }
 
 .content-cards {
-  max-width: 17.5rem;
-  min-width: 17.5rem;
+  max-width: 15rem;
+  min-width: 15rem;
   margin-bottom: 1.5rem;
   border-radius: 5px;
-  height: 393px;
+  height: 21.5rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
   background-color: #ffffff;
-  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .content-cards-text {
