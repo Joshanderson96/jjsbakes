@@ -23,10 +23,6 @@ tabs.onclick = e => {
   }
 }
 
-
-
-
-
 window.showHide = function () {
   let modal = document.querySelector('.userForm-container');
   let modalBackground = document.querySelector('.userForm');
