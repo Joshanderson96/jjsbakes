@@ -25,7 +25,12 @@
         
 
         <div class="content-filter">
-            
+            <h3 class="content-filter--title">Filter</h3>
+
+            <div class="content-filter-section">
+                <h4>Sort</h4>
+                
+            </div>
         </div>
 
 

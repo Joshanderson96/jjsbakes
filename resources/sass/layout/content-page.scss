@@ -6,16 +6,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
--moz-box-sizing: border-box;    /* Firefox, other Gecko */
-box-sizing: border-box;         /* Opera/IE 8+ */
+    overflow: hidden;
 
+    @include border-box;
 
     .content-container__cards {
 
         // border: black 1px solid;
         display: grid;
-        gap: 2rem 1.5rem;
+        gap: 2rem 1.25rem;
         grid-template-columns: repeat(3, 1fr);
 
     }
@@ -25,10 +24,6 @@ box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
 .content-title {
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
-
     max-width: $max-width;
     background-color: $very-light-grey;
     height: 4rem;
@@ -41,6 +36,8 @@ box-sizing: border-box;         /* Opera/IE 8+ */
 
     border-radius: $border-radius;
     padding: 0px 1rem;
+
+    @include border-box;
     
     
     &--text {
@@ -66,8 +63,17 @@ box-sizing: border-box;         /* Opera/IE 8+ */
     height: 620px;
     min-width: 11rem;
     margin-right: 1rem;
+    padding: 1rem;
     border-radius: $border-radius;
     background-color: $very-light-grey;
+
+    @include border-box;
+
+    &--title {
+        font-family: $main-font;
+        color: $main-colour;
+        font-size: 2rem;
+    }
 }
 
 .content-cards {

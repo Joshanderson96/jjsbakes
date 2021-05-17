@@ -1066,23 +1066,19 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow: hidden;
   /* Safari/Chrome, other WebKit */
   /* Firefox, other Gecko */
   box-sizing: border-box;
-  /* Opera/IE 8+ */
 }
 
 .content-container .content-container__cards {
   display: grid;
-  gap: 2rem 1.5rem;
+  gap: 2rem 1.25rem;
   grid-template-columns: repeat(3, 1fr);
 }
 
 .content-title {
-  /* Safari/Chrome, other WebKit */
-  /* Firefox, other Gecko */
-  box-sizing: border-box;
-  /* Opera/IE 8+ */
   max-width: 960px;
   background-color: #f0f0f0;
   height: 4rem;
@@ -1093,6 +1089,9 @@ a {
   justify-content: space-between;
   border-radius: 5px;
   padding: 0px 1rem;
+  /* Safari/Chrome, other WebKit */
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
 }
 
 .content-title--text {
@@ -1115,8 +1114,18 @@ a {
   height: 620px;
   min-width: 11rem;
   margin-right: 1rem;
+  padding: 1rem;
   border-radius: 5px;
   background-color: #f0f0f0;
+  /* Safari/Chrome, other WebKit */
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+
+.content-filter--title {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #fa8ebe;
+  font-size: 2rem;
 }
 
 .content-cards {
