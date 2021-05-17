@@ -98,10 +98,26 @@
         margin: auto;
         margin-right: 1rem;
 
+        display: flex;
+        align-items: flex-end;
+
+        position:relative;
 
 
 
     }
+}
+
+.dropDown {
+    position: absolute;
+    top: 4rem;
+    background-color: white;
+    height: 3rem;
+    width: 100%;
+    
+
+
+    @include subtle-shadow;
 }
 
 .header-container {

@@ -110,12 +110,15 @@
         @if  (Route::has('login'))
             <div class="auth">
                 @auth 
-					<a class="login_button" href="/user/{{ Auth::user()->id }}"><button class="login_button login_button--profile"><span class="opacity-text">{{ Auth::user()->name }}</span></button></a>
-                    <a class="navbar-options__link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+					<a class="login_button" onclick='showHideProfileMenu()'><button class="login_button login_button--profile"><span class="opacity-text">{{ Auth::user()->name }}</span></button></a>
+					<div class="dropDown hide">
+						<a class="navbar-options__link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
 
-                    <form id="logout-form" action="{{ route('logout')}} " method="post" style="display: none">
-                        @csrf
-                    </form>
+                    	<form id="logout-form" action="{{ route('logout')}} " method="post" style="display: none">
+                        	@csrf
+                    	</form>
+					</div>
+
                 @else
                     <a onclick="showHide()"><button class="login_button login_button--login" "><span class="opacity-text">Login/Register</span></button></a><!--
 

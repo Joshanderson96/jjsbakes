@@ -1,8 +1,10 @@
 .login_button {
   position: relative;
-  padding: 1rem 1rem;
+  padding: 1rem 0rem;
   min-width: 10rem;
   font-weight: 500;
+
+  @include border-box;
   
 
   // @include subtle-shadow;

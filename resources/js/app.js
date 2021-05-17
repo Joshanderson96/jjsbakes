@@ -36,6 +36,16 @@ window.showHide = function () {
   }
 }
 
+window.showHideProfileMenu = function () {
+  let dropDown = document.querySelector('.dropDown');
+
+  if (dropDown.classList.contains('hide')) {
+    dropDown.classList.remove('hide');
+  } else {
+    dropDown.classList.add('hide');
+  }
+}
+
 
 
 

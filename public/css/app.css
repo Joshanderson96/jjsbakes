@@ -721,9 +721,12 @@ a {
 
 .login_button {
   position: relative;
-  padding: 1rem 1rem;
+  padding: 1rem 0rem;
   min-width: 10rem;
   font-weight: 500;
+  /* Safari/Chrome, other WebKit */
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
 }
 
 .login_button--login {
@@ -968,6 +971,18 @@ a {
 .navbar-auth-container {
   margin: auto;
   margin-right: 1rem;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.dropDown {
+  position: absolute;
+  top: 4rem;
+  background-color: white;
+  height: 3rem;
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .header-container {
