@@ -972,17 +972,48 @@ a {
   margin: auto;
   margin-right: 1rem;
   display: flex;
-  align-items: flex-end;
+  justify-content: flex-end;
+  direction: rtl;
   position: relative;
 }
 
 .dropDown {
   position: absolute;
-  top: 4rem;
+  top: 3.5rem;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  border-radius: 5px;
+  justify-content: flex-end;
+  /* Safari/Chrome, other WebKit */
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.dropDown-links {
   height: 3rem;
   width: 100%;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-size: 1.5rem;
+  text-align: right;
+  padding: 0 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  /* Safari/Chrome, other WebKit */
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+
+.dropDown-links:hover {
+  background-color: #fa8ebe;
+  color: white;
+  text-decoration: none;
+}
+
+.dropDown-links:visited {
+  color: inherit;
 }
 
 .header-container {

@@ -12,10 +12,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-
-
-
     }
 
 
@@ -97,10 +93,9 @@
     &-auth-container {
         margin: auto;
         margin-right: 1rem;
-
         display: flex;
-        align-items: flex-end;
-
+        justify-content: flex-end;
+        direction: rtl;
         position:relative;
 
 
@@ -110,14 +105,41 @@
 
 .dropDown {
     position: absolute;
-    top: 4rem;
+    top: 3.5rem;
     background-color: white;
-    height: 3rem;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    border-radius: $border-radius;
+    justify-content: flex-end;
     
 
-
+    @include border-box;
+    
     @include subtle-shadow;
+
+    &-links {
+        height: 3rem;
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: right;
+        padding:  0 1rem;
+        text-decoration: none;
+
+        display: flex;
+        align-items: center;
+        @include border-box;
+
+        &:hover {
+            background-color: $main-colour;
+            color: white;
+            text-decoration: none;
+        }
+
+        &:visited {
+            color: inherit;
+        }
+    }
 }
 
 .header-container {
