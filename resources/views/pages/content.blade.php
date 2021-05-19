@@ -69,6 +69,8 @@
         
         
     @endforeach
+
+    {{ $blog->links() }}
         </div>
     </div>
 
