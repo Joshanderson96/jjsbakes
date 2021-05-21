@@ -12,10 +12,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-
-
-
     }
 
 
@@ -97,10 +93,56 @@
     &-auth-container {
         margin: auto;
         margin-right: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        direction: rtl;
+        position:relative;
 
 
 
+    }
+}
 
+.dropDown {
+    position: absolute;
+    width: 15rem;
+    top: 3.5rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    border-radius: $border-radius;
+    // justify-content: flex-start;
+    
+
+    @include border-box;
+    
+    @include subtle-shadow;
+
+    &-links {
+        height: 3rem;
+        width: 100%;
+        font-size: 1rem;
+        padding:  0 1rem;
+        text-decoration: none;
+        color: $main-colour;
+        font-family: $secondary-font;
+        
+
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        @include border-box;
+
+        &:hover {
+            background-color: $lighter-main;
+            color: $main-colour;
+            text-decoration: none;
+        }
+
+        &:visited {
+            color: $main-colour;
+        }
     }
 }
 

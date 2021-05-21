@@ -52,7 +52,7 @@
                     <div class="recipe-container--inner">
                         <h4 class="recipe-heading">Recipe:</h4>
                  <p class="recipe-text"> </p>
-                 <textarea name="recipe" class="create-form__input recipe-text" id="" cols="30" rows="10" required></textarea>
+                 <textarea name="recipe" class="create-form__input recipe-text" id="" cols="30" rows="10" ></textarea>
                     </div>
                 
             </div>
@@ -65,7 +65,7 @@
             
             <div class="blog-post">
                 <h3 class="blog-post--title main-heading blog-post--post">Post</h3>
-                <textarea name="post" placeholder="Enter Your Post..." class="create-form__input tinymce-post" id="" cols="30" rows="10" required></textarea>
+                <textarea name="post" placeholder="Enter Your Post..." class="create-form__input tinymce-post" id="" cols="30" rows="10" ></textarea>
                 <p ></p>
             </div>
 

@@ -24,7 +24,7 @@ class BlogController extends Controller
     public function index()
     {
         
-        $blog = \App\Models\Blog::latest()->get();
+        $blog = Blog::paginate(12);
 
         return view('pages.content', compact('blog'));
     }

@@ -25,7 +25,6 @@
 
 .content-title {
     max-width: $max-width;
-    background-color: $very-light-grey;
     height: 4rem;
     width: 100%;
     margin: 2rem 0 1rem 0;
@@ -60,7 +59,7 @@
 
 
 .content-filter {
-    height: 620px;
+    height: 100%;
     min-width: 11rem;
     margin-right: 1rem;
     padding: 1rem;

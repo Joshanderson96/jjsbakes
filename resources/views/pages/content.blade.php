@@ -8,15 +8,15 @@
     @section('pageName', 'Gallery')
 
     <div class="content-title">
-                <h3 class="content-title--text">Gallery</h3>
-                <div class="content-title-create">            
-                    @if  (Route::has('login'))
+        <h3 class="content-title--text">Gallery</h3>
+        <div class="content-title-create">            
+            @if  (Route::has('login'))
                 <div class="auth">
-                @auth 
+            @auth 
                 <a  href="blogs/create"><button class="login_button--login content-title-create--button"><p class="opacity-text">Create</p></button></a>
-                @else
+            @else
                                 
-                @endif    
+            @endif    
                 </div>
             @endif            
         </div>
@@ -69,6 +69,8 @@
         
         
     @endforeach
+
+    {{ $blog->links() }}
         </div>
     </div>
 

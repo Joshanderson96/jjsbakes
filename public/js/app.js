@@ -1881,6 +1881,16 @@ window.showHide = function () {
   }
 };
 
+window.showHideProfileMenu = function () {
+  var dropDown = document.querySelector('.dropDown');
+
+  if (dropDown.classList.contains('hide')) {
+    dropDown.classList.remove('hide');
+  } else {
+    dropDown.classList.add('hide');
+  }
+};
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":

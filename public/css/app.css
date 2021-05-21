@@ -721,9 +721,12 @@ a {
 
 .login_button {
   position: relative;
-  padding: 1rem 1rem;
+  padding: 1rem 0rem;
   min-width: 10rem;
   font-weight: 500;
+  /* Safari/Chrome, other WebKit */
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
 }
 
 .login_button--login {
@@ -968,6 +971,51 @@ a {
 .navbar-auth-container {
   margin: auto;
   margin-right: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  direction: rtl;
+  position: relative;
+}
+
+.dropDown {
+  position: absolute;
+  width: 15rem;
+  top: 3.5rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  border-radius: 5px;
+  /* Safari/Chrome, other WebKit */
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.dropDown-links {
+  height: 3rem;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0 1rem;
+  text-decoration: none;
+  color: #fa8ebe;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  /* Safari/Chrome, other WebKit */
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+
+.dropDown-links:hover {
+  background-color: #fdddeb;
+  color: #fa8ebe;
+  text-decoration: none;
+}
+
+.dropDown-links:visited {
+  color: #fa8ebe;
 }
 
 .header-container {
@@ -1080,7 +1128,6 @@ a {
 
 .content-title {
   max-width: 960px;
-  background-color: #f0f0f0;
   height: 4rem;
   width: 100%;
   margin: 2rem 0 1rem 0;
@@ -1111,12 +1158,12 @@ a {
 }
 
 .content-filter {
-  height: 620px;
+  height: 100%;
   min-width: 11rem;
   margin-right: 1rem;
   padding: 1rem;
   border-radius: 5px;
-  background-color: #f0f0f0;
+  background-color: #f5f5f5;
   /* Safari/Chrome, other WebKit */
   /* Firefox, other Gecko */
   box-sizing: border-box;
@@ -1174,7 +1221,7 @@ a {
   width: 100%;
   color: #fa8ebe;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f5f5f5;
   font-weight: 500;
 }
 
@@ -1183,7 +1230,7 @@ a {
   color: #9d9d9d;
   font-weight: 300;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f5f5f5;
   display: flex;
   justify-content: space-between;
 }
@@ -1269,7 +1316,7 @@ a {
   border-bottom: 0.2rem solid #8efaca;
   border-radius: 0.3rem 0.3rem 0.1rem 0.1rem;
   background-repeat: no-repeat;
-  background-color: #f0f0f0;
+  background-color: #f5f5f5;
   text-align: center;
   font-size: 2rem;
   color: #fa8ebe;
@@ -1307,7 +1354,7 @@ a {
   display: inline-block;
   height: 3.5rem;
   border: none;
-  background: #f0f0f0;
+  background: #f5f5f5;
   color: #8efaca;
   border-radius: 0.3rem 0.3rem 0.1rem 0.1rem;
   border-bottom: #8efaca solid;
@@ -1332,7 +1379,7 @@ a {
   border-bottom: 0.2rem solid #8efaca;
   border-radius: 0.3rem 0.3rem 0.1rem 0.1rem;
   width: 4rem;
-  background: #f0f0f0;
+  background: #f5f5f5;
   color: grey;
   text-align: center;
 }
@@ -1418,7 +1465,7 @@ a {
 
 .blog-post {
   width: 100%;
-  background-color: #fdfdfd;
+  background-color: white;
   padding: 1rem;
   margin-top: 2rem;
   border-radius: 5px;
@@ -1428,7 +1475,7 @@ a {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
-  background-color: #fafafa;
+  background-color: white;
   padding: 1rem;
   border-radius: 5px;
 }
@@ -1468,8 +1515,8 @@ a {
   text-align: start;
   padding: 1rem 1rem;
   color: #fa8ebe;
-  border-right: 1px solid #f0f0f0;
-  border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f5f5f5;
+  border-left: 1px solid #f5f5f5;
   text-decoration: none;
 }
 
