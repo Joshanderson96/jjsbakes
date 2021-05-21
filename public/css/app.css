@@ -979,13 +979,13 @@ a {
 
 .dropDown {
   position: absolute;
+  width: 15rem;
   top: 3.5rem;
   background-color: white;
   display: flex;
   flex-direction: column;
   padding: 1rem 0;
   border-radius: 5px;
-  justify-content: flex-end;
   /* Safari/Chrome, other WebKit */
   /* Firefox, other Gecko */
   box-sizing: border-box;
@@ -995,25 +995,27 @@ a {
 .dropDown-links {
   height: 3rem;
   width: 100%;
-  font-size: 1.5rem;
-  text-align: right;
+  font-size: 1rem;
   padding: 0 1rem;
   text-decoration: none;
+  color: #fa8ebe;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   display: flex;
   align-items: center;
+  justify-content: left;
   /* Safari/Chrome, other WebKit */
   /* Firefox, other Gecko */
   box-sizing: border-box;
 }
 
 .dropDown-links:hover {
-  background-color: #fa8ebe;
-  color: white;
+  background-color: #fdddeb;
+  color: #fa8ebe;
   text-decoration: none;
 }
 
 .dropDown-links:visited {
-  color: inherit;
+  color: #fa8ebe;
 }
 
 .header-container {

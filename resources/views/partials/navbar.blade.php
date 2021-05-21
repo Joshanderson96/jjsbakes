@@ -112,16 +112,22 @@
                 @auth 
 					<a class="login_button" onclick='showHideProfileMenu()'><button class="login_button login_button--profile"><span class="opacity-text">{{ Auth::user()->name }}</span></button></a>
 					<div class="dropDown hide">
-					<div class="dropDown-links">
-					<a class="navbar-options__link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+					<a class="" href="/user/{{ Auth::user()->id }}"><div class="dropDown-links" href="/user/{{ Auth::user()->id }}">
+						<p>Profile</p>
+					</div></a>
+
+
+					<a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+						<div class="dropDown-links">
+							<p>Logout</p>
+						</div>
+					</a>
 					<form id="logout-form" action="{{ route('logout')}} " method="post" style="display: none">
 						@csrf
 					</form>
-				</div>
+					
 
-				<div class="dropDown-links">
-					<a class="login_button" href="/user/{{ Auth::user()->id }}">Profile</a>
-				</div>
+
 						
 					</div>
                 @else
