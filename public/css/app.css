@@ -986,6 +986,7 @@ a {
   flex-direction: column;
   padding: 1rem 0;
   border-radius: 5px;
+  z-index: 999;
   /* Safari/Chrome, other WebKit */
   /* Firefox, other Gecko */
   box-sizing: border-box;
