@@ -986,6 +986,7 @@ a {
   flex-direction: column;
   padding: 1rem 0;
   border-radius: 5px;
+  z-index: 999;
   /* Safari/Chrome, other WebKit */
   /* Firefox, other Gecko */
   box-sizing: border-box;
@@ -1122,7 +1123,7 @@ a {
 
 .content-container .content-container__cards {
   display: grid;
-  gap: 2rem 1.25rem;
+  gap: 1.25rem 1.25rem;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -1135,7 +1136,6 @@ a {
   align-items: center;
   justify-content: space-between;
   border-radius: 5px;
-  padding: 0px 1rem;
   /* Safari/Chrome, other WebKit */
   /* Firefox, other Gecko */
   box-sizing: border-box;
@@ -1178,7 +1178,6 @@ a {
 .content-cards {
   max-width: 15rem;
   min-width: 15rem;
-  margin-bottom: 1.5rem;
   border-radius: 5px;
   height: 21.5rem;
   text-align: center;
