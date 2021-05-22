@@ -910,7 +910,7 @@ a {
 .navbar {
   display: flex;
   background-color: #fa8ebe;
-  height: 80px;
+  height: 4rem;
   min-width: 100%;
   align-items: center;
 }
