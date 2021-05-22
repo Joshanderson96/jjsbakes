@@ -29,7 +29,20 @@
 
             <div class="content-filter-section">
                 <h4>Sort</h4>
-                
+                <p>Categories</p>
+                @foreach ($categories as $category)
+                    <label>
+                        <input
+                            name="category" type="checkbox" value="{{ $category->id }}"
+                            @if (in_array($category->id, explode(',', request()->input('filter.category'))))
+                                checked
+                            @endif
+                        >
+                        {{ $category->category }}
+                    </label>
+                @endforeach
+
+                <button type="button" id="filter">Filter</button>
             </div>
         </div>
 
@@ -70,7 +83,7 @@
         
     @endforeach
 
-    {{ $blog->links() }}
+
         </div>
     </div>
 

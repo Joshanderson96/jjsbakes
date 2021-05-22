@@ -1891,6 +1891,29 @@ window.showHideProfileMenu = function () {
   }
 };
 
+window.getIds = function (checkboxName) {
+  var checkBoxes = document.getElementsByName(checkboxName);
+  var ids = Array.prototype.slice.call(checkBoxes).filter(function (ch) {
+    return ch.checked == true;
+  }).map(function (ch) {
+    return ch.value;
+  });
+  return ids;
+};
+
+window.filterResults = function () {
+  var categoryIds = getIds("category");
+  var href = 'blogs?';
+
+  if (categoryIds.length) {
+    href += '&filter[category]=' + categoryIds;
+  }
+
+  document.location.href = href;
+};
+
+document.getElementById('filter').addEventListener("click", filterResults);
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
