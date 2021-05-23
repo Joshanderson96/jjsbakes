@@ -14,7 +14,7 @@
            <p class="blog-info--text">{{ $blogs->hours}} Hrs. {{ $blogs->minutes}} Mins. </p>
        </div>
        <div class="blog-info--category">
-            <p class="blog-info--text">{{ $blogs->category}}</p>
+            <p class="blog-info--text">{{ $blogs->category->category}}</p>
        </div>
    </div>
 

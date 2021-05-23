@@ -30,5 +30,10 @@ class Blog extends Model
         return $this->belongsTo(Profile::class);
     }
 
+    public function category(Type $var = null)
+    {
+        return $this->hasOne(Category::class, 'id', 'category_id');
+    }
+
 
 }
