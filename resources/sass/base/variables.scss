@@ -34,3 +34,12 @@ $border-radius: 5px;
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box; 
 }
+
+@mixin no-highlight {
+  -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+     -khtml-user-select: none;
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none; 
+}

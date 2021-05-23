@@ -32,7 +32,9 @@ class BlogController extends Controller
             ->allowedFilters([
                     AllowedFilter::exact('category', 'category_id'),
                 ])
-            ->get();
+            
+            ->paginate(12)
+            ->appends(request()->query());
 
         
 
