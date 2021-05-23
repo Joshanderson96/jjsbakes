@@ -37,11 +37,11 @@
                     </div>
                 </div>
                 <div class="blog-info--category">
-                    <select name="category" class="create-form__select">
+                    <select name="category_id" class="create-form__select">
                         <option value="" disabled selected>Select your category</option>
-                        <option value="Cake">Cake</option>
-                        <option value="Brownies">Brownies</option>
-                        <option value="Cookies">Cookies</option>
+                        <option value="1">Cake</option>
+                        <option value="2">Brownies</option>
+                        <option value="3">Cookies</option>
                     </select>
                      {{-- <p class="">{{ $blogs->category}}</p> --}}
                 </div>

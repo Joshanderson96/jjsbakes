@@ -13,7 +13,7 @@ class Blog extends Model
         'title',
         'user_id',
         'hours',
-        'category',
+        'category_id',
         'minutes',
         'recipe',
         'post',
@@ -29,4 +29,6 @@ class Blog extends Model
     {
         return $this->belongsTo(Profile::class);
     }
+
+
 }

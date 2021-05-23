@@ -46,6 +46,29 @@ window.showHideProfileMenu = function () {
   }
 }
 
+window.getIds = function (checkboxName) {
+  let checkBoxes = document.getElementsByName(checkboxName);
+
+  let ids = Array.prototype.slice.call(checkBoxes)
+                                  .filter(ch => ch.checked==true)
+                                  .map(ch => ch.value);
+  return ids;
+}
+
+window.filterResults = function () {
+  let categoryIds = getIds("category");
+
+  let href = 'blogs?';
+
+  if (categoryIds.length) {
+    href += '&filter[category]=' + categoryIds;
+  }
+
+  document.location.href=href;
+}
+
+document.getElementById('filter').addEventListener("click", filterResults);
+
 
 
 

@@ -5,7 +5,10 @@ namespace App\Http\Controllers;
 use App\Models\Blog;
 use App\Models\User;
 use App\Models\Photo;
+use App\Models\Category;
 use Illuminate\Http\Request;
+use Spatie\QueryBuilder\QueryBuilder;
+use Spatie\QueryBuilder\AllowedFilter;
 use Auth;
 
 
@@ -23,10 +26,19 @@ class BlogController extends Controller
 
     public function index()
     {
-        
-        $blog = Blog::paginate(12);
+        $categories = Category::all();
 
-        return view('pages.content', compact('blog'));
+        $blog = QueryBuilder::for(Blog::class)
+            ->allowedFilters([
+                    AllowedFilter::exact('category', 'category_id'),
+                ])
+            
+            ->paginate(12)
+            ->appends(request()->query());
+
+        
+
+        return view('pages.content', compact('blog', 'categories'));
     }
 
     /**
@@ -54,7 +66,7 @@ class BlogController extends Controller
             'title' => 'required',
             'user_id' => 'reqired',
             'hours' => 'required',
-            'category' => 'required',
+            'category_id' => 'required',
             'minutes' => 'required',
             'recipe' => 'required',
             'post' => 'required',
@@ -115,7 +127,7 @@ class BlogController extends Controller
             'title' => 'required',
             'user_id' => 'reqired',
             'hours' => 'required',
-            'category' => 'required',
+            'category_id' => 'required',
             'minutes' => 'required',
             'recipe' => 'required',
             'post' => 'required',

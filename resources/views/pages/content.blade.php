@@ -25,11 +25,29 @@
         
 
         <div class="content-filter">
-            <h3 class="content-filter--title">Filter</h3>
-
             <div class="content-filter-section">
-                <h4>Sort</h4>
-                
+                <p class="content-filter--title">Categories</p>
+                @foreach ($categories as $category)
+    
+                    <label class="filter-buttons">
+                        
+                            <input
+                                name="category" type="checkbox" class="filter-buttons--toggle" value="{{ $category->id }}"
+                                @if (in_array($category->id, explode(',', request()->input('filter.category'))))
+                                    checked
+                                @endif
+                            > 
+                            <div class="filter-buttons--btn">
+                                <p>{{ $category->category }}</p>
+                            </div>
+
+
+                        
+                        
+                    </label>
+                @endforeach
+
+                <button type="button" id="filter" class="filter-buttons--filter"><span class="opacity-text">Filter</span> </button>
             </div>
         </div>
 
@@ -70,7 +88,7 @@
         
     @endforeach
 
-    {{ $blog->links() }}
+
         </div>
     </div>
 

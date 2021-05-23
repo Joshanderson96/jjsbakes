@@ -17,7 +17,7 @@ class CreateBlogPost extends Migration
             $table->id();
             $table->text('title');
             $table->integer('user_id')->unsigned();
-            $table->text('category');
+            $table->integer('category_id');
             $table->integer('hours');
             $table->integer('minutes');
             $table->text('recipe');
